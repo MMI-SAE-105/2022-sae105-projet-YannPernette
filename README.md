@@ -1,7 +1,7 @@
-- NOM : 
-- PRÉNOM :
+- NOM : Pernette
+- PRÉNOM : Yann
 - URL du site :
-- URL FIGMA :
+- URL FIGMA : https://www.figma.com/file/KqJ51nMGySmKTcmkUAhxqa/Maquettes-projet-individuel-—-Yann-PERNETTE-(V2)?node-id=801%3A781&t=dTse4Fg1oyyAfTzJ-0
 
 # Structure de départ pour le projet individuel.
 
