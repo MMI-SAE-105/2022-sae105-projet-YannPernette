@@ -1,0 +1,27 @@
+:root {
+    /* Color styles */
+--noir: rgba(22, 22, 22, 1);
+--dore: rgba(241, 197, 55, 1);
+--blanc: rgba(251, 251, 251, 1);
+--nuance-dore: rgba(255, 216, 13, 1);
+
+/* Text-size styles */
+--titre: 28px;
+--titre-2: 24px;
+--sous-titre: 24px;
+--texte-basique: 18px;
+--légende-image: 18px;
+--infos-pratiques: 14px;
+--big-uppercase: 32px;
+--small-uppercase: 20px;
+
+/* Typography */
+--arimo: 'Arimo', sans-serif;
+--josefin-sans: 'Josefin Sans', sans-serif;
+--josefin-slab: 'Josefin Slab', serif;
+--lato: 'Lato', sans-serif;
+--maven-pro: 'Maven Pro', sans-serif;
+
+/* Effect styles */
+--ombres-images:  8px -7px 10px rgba(241, 197, 55, 1);
+}
