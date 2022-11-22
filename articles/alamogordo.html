@@ -7,6 +7,10 @@
     <title>Continuous Evolution</title>
     <link rel="shortcut icon" href="../public/icon/adn_logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="../src/css/style.css">
+    <!-- Importation x-collapse -->
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <!-- Importation Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body>
@@ -53,48 +57,51 @@
         <h1>Lieux similaires</h1>
         <p>Les lieux présentés ont tous participé à l’évolution du monde. Leur impact a été grand et a durablement changé la société dans laquelle on vit.</p>
 
+        <div class="frise" x-data="{descrIsOpen : 0}">
 
-        <img src="../public/icon/adn.svg" alt="séparation ADN">
+            <img src="../public/icon/adn.svg" alt="séparation ADN">
 
-        <section>
-            <p>- 65 millions</p>
-            <img src="../public/img/articles/alamogordo/frise/lieu_1.webp" alt="cratère de Chicxulub">
-            <p>Cratère de Chicxulub, là où la météorite ayant probablement provoqué l’extinction des dinosaures a percuté la Terre</p>
-        </section>
+            <section>
+                <p>- 65 millions</p>
+                <img src="../public/img/articles/alamogordo/frise/lieu_1.webp" alt="cratère de Chicxulub" @click="descrIsOpen = 1">
+                <p x-show="descrIsOpen == 1" x-collapse>Cratère de Chicxulub, là où la météorite ayant probablement provoqué l’extinction des dinosaures a percuté la Terre</p>
+            </section>
 
-        <img src="../public/icon/adn.svg" alt="séparation ADN">
+            <img src="../public/icon/adn.svg" alt="séparation ADN">
 
-        <section>
-            <p>1940</p>
-            <img src="../public/img/articles/alamogordo/frise/lieu_2.webp" alt="cratère de Chicxulub">
-            <p>Cratère de Chicxulub, là où la météorite ayant probablement provoqué l’extinction des dinosaures a percuté la Terre</p>
-        </section>
+            <section>
+                <p>1940</p>
+                <img src="../public/img/articles/alamogordo/frise/lieu_2.webp" alt="camp de concentration d’Auschwitz" @click="descrIsOpen = 2">
+                <p x-show="descrIsOpen == 2" x-collapse>Camp de concentration d’Auschwitz, principal endroit où les nazis ont exterminé les juifs, se rendant coupables de crime contre l’humanité</p>
+            </section>
 
-        <img src="../public/icon/adn.svg" alt="séparation ADN">
+            <img src="../public/icon/adn.svg" alt="séparation ADN">
 
-        <section>
-            <p>1945</p>
-            <img src="../public/img/articles/alamogordo/frise/lieu_3.webp" alt="cratère de Chicxulub">
-            <p>Cratère de Chicxulub, là où la météorite ayant probablement provoqué l’extinction des dinosaures a percuté la Terre</p>
-        </section>
+            <section>
+                <p>1945</p>
+                <img src="../public/img/articles/alamogordo/frise/lieu_3.webp" alt="ville d’Hiroshima" @click="descrIsOpen = 3">
+                <p x-show="descrIsOpen == 3" x-collapse>Ville d’Hiroshima après l’explosion de la première bombe nucléaire à but de destruction</p>
+            </section>
 
-        <img src="../public/icon/adn.svg" alt="séparation ADN">
+            <img src="../public/icon/adn.svg" alt="séparation ADN">
 
-        <section>
-            <p>1945</p>
-            <img src="../public/img/articles/alamogordo/frise/lieu_4.webp" alt="cratère de Chicxulub">
-            <p>Cratère de Chicxulub, là où la météorite ayant probablement provoqué l’extinction des dinosaures a percuté la Terre</p>
-        </section>
+            <section>
+                <p>1945</p>
+                <img src="../public/img/articles/alamogordo/frise/lieu_4.webp" alt="ville de Nagasaki" @click="descrIsOpen = 4">
+                <p x-show="descrIsOpen == 4" x-collapse>Ville de Nagasaki après l’explosion de la deuxième bombe nucléaire à but de destruction</p>
+            </section>
 
-        <img src="../public/icon/adn.svg" alt="séparation ADN">
+            <img src="../public/icon/adn.svg" alt="séparation ADN">
 
-        <section>
-            <p>2001</p>
-            <img src="../public/img/articles/alamogordo/frise/lieu_5.webp" alt="cratère de Chicxulub">
-            <p>Cratère de Chicxulub, là où la météorite ayant probablement provoqué l’extinction des dinosaures a percuté la Terre</p>
-        </section>
+            <section>
+                <p>2001</p>
+                <img src="../public/img/articles/alamogordo/frise/lieu_5.webp" alt="World Trade Center" @click="descrIsOpen = 5">
+                <p x-show="descrIsOpen == 5" x-collapse>World Trade Center subissant la première attaque terroriste sur le sol américain, déclenchement d’attaques terroristes partout dans le monde</p>
+            </section>
 
-        <img src="../public/icon/adn.svg" alt="séparation ADN">
+            <img src="../public/icon/adn.svg" alt="séparation ADN">
+
+        </div>
 
 
         <img src="../public/img/elements/adn transi.svg" alt="transition ADN">
