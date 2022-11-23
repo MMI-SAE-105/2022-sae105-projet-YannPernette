@@ -23,3 +23,6 @@ Soyez attentifs à l'ordre d'import :
 /* Règles générales */
 @import "base/main.css";
 @import "base/media.css";
+
+/* Composants */
+@import "components/card.css";

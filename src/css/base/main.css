@@ -18,6 +18,11 @@ p {
     font-family: var(--arimo);
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 figcaption {
     font-size: var(--legende-image);
     font-family: var(--josefin-slab);
@@ -39,4 +44,30 @@ blockquote {
     width: 100%;
     border-radius: 10px;
     box-shadow: var(--ombres-images);
+}
+
+footer {
+    background-color: rgb(167, 33, 33);
+    margin: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+.icon_res {
+    display: inline-block;
+    width: 15%;
+    padding: 5px;
+}
+
+.logo_mmi {
+    width: 15%;
+    padding: 5px;
+}
+
+.info {
+    text-align: center;
+    font-size: var(--infos-pratiques);
+    font-family: var(--lato);
 }
