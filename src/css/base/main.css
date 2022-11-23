@@ -26,8 +26,10 @@ h4 {
 }
 
 p {
+    color: black;
     font-size: var(--texte-basique);
     font-family: var(--arimo);
+    padding: 10px;
 }
 
 a {
@@ -46,12 +48,6 @@ blockquote {
     text-transform: uppercase;
 }
 
-.img_article {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: var(--ombres-images);
-}
-
 footer {
     background-color: rgb(167, 33, 33);
     margin: 0px;
@@ -61,19 +57,21 @@ li {
     list-style: none;
 }
 
-.icon_res {
-    display: inline-block;
-    width: 15%;
-    padding: 5px;
-}
-
-.logo_mmi {
-    width: 15%;
-    padding: 5px;
-}
-
 .info {
     text-align: center;
     font-size: var(--infos-pratiques);
     font-family: var(--lato);
+}
+
+.intro {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    padding: 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--nuance-dore);
+    border-radius: 25% 10%;
+    box-shadow: 8px -7px 10px rgb(11, 11, 10);
 }
