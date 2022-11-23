@@ -9,11 +9,11 @@
 --titre: 28px;
 --titre-2: 24px;
 --sous-titre: 24px;
---texte-basique: 18px;
---légende-image: 18px;
+--texte-basique: 16px;
+--légende-image: 16px;
 --infos-pratiques: 14px;
 --big-uppercase: 32px;
---small-uppercase: 20px;
+--small-uppercase: 18px;
 
 /* Typography */
 --arimo: 'Arimo', sans-serif;
@@ -21,6 +21,14 @@
 --josefin-slab: 'Josefin Slab', serif;
 --lato: 'Lato', sans-serif;
 --maven-pro: 'Maven Pro', sans-serif;
+
+/* Font-weight */
+--regular: 400;
+--medium: 500;
+--bold: 700;
+
+/* Text styles */
+--italic: italic;
 
 /* Effect styles */
 --ombres-images:  8px -7px 10px rgba(241, 197, 55, 1);

@@ -1,3 +1,42 @@
 h1 {
-    
+    font-size: var(--titre-2);
+    font-family: var(--josefin-sans);
+    text-transform: uppercase;
+    color: var(--dore);
+    text-align: center;
+}
+
+h2 {
+    font-size: var(--titre);
+    font-family: var(--josefin-sans);
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+p {
+    font-size: var(--texte-basique);
+    font-family: var(--arimo);
+}
+
+figcaption {
+    font-size: var(--legende-image);
+    font-family: var(--josefin-slab);
+}
+
+h3 {
+    font-size: var(--sous-titre);
+    font-family: var(--josefin-sans);
+    font-weight: var(--medium);
+}
+
+blockquote {
+    font-size: var(--small-uppercase);
+    font-family: var(--maven-pro);
+    text-transform: uppercase;
+}
+
+.img_article {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: var(--ombres-images);
 }
