@@ -1,4 +1,35 @@
 .card {
-    background-color: var(--black);
+    margin: 7px;
+    border-radius: 10px;
+}
+
+.card_titre {
     text-align: center;
+    padding: 10px 0px;
+    color: var(--dore);
+    background-color: var(--noir);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card_img {
+    margin: -33px 0 -20px 0;
+}
+
+.card_descr {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--nuance-dore);
+    margin-bottom: -16px;
+    border-bottom-right-radius: 5px;
+}
+
+.card_suite {
+    display: inline-block;
+    padding: 10px;
+    color: var(--dore);
+    background-color: var(--noir);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
 }
