@@ -26,3 +26,4 @@ Soyez attentifs à l'ordre d'import :
 
 /* Composants */
 @import "components/card.css";
+@import "components/frise.css";
