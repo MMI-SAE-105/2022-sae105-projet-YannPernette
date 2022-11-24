@@ -2,7 +2,18 @@
     margin: 15px;
 }
 
+.frise_date {
+    z-index: 2;
+    position: absolute;
+    color: var(--dore);
+    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+    font-family: var(--josefin-sans);
+    font-size: var(--big-uppercase);
+    text-transform: uppercase;
+}
+
 .frise_img {
+    z-index: 1;
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;

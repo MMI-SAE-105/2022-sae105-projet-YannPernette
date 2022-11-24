@@ -46,6 +46,11 @@ blockquote {
     font-size: var(--small-uppercase);
     font-family: var(--maven-pro);
     text-transform: uppercase;
+    background-color: var(--nuance-dore);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0;
 }
 
 footer {
