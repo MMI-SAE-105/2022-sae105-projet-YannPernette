@@ -43,14 +43,14 @@ figcaption {
 }
 
 blockquote {
+    text-align: center;
     font-size: var(--small-uppercase);
     font-family: var(--maven-pro);
     text-transform: uppercase;
     background-color: var(--nuance-dore);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 0;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 0;
+    border-radius: 0% 100% 0% 100% / 70% 40% 70% 40%;
+    padding: 24px 20px 18px 10px;
+    /* margin: auto; */
 }
 
 footer {
