@@ -1,0 +1,15 @@
+footer {
+    background-color: rgb(167, 33, 33);
+    margin: 0px;
+
+}
+
+.footer_img {
+    margin: 10px;
+}
+
+.footer_lien {
+    font-size: var(--small-uppercase);
+    font-family: var(--maven-pro);
+    background-color: blue;
+}
