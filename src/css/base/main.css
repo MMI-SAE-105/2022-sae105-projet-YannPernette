@@ -7,10 +7,11 @@ h1 {
 }
 
 h2 {
+    padding: 15px;
     font-size: var(--titre);
     font-family: var(--josefin-sans);
     text-transform: uppercase;
-    color: var(--black);
+    color: var(--blanc);
 }
 
 h3 {
@@ -55,12 +56,6 @@ blockquote {
 
 li {
     list-style: none;
-}
-
-.info {
-    text-align: center;
-    font-size: var(--infos-pratiques);
-    font-family: var(--lato);
 }
 
 .intro {

@@ -1,5 +1,5 @@
-footer {
-    background-color: rgb(167, 33, 33);
+.footer {
+    background-color: var(--noir);
     margin: 0px;
 
 }
@@ -8,8 +8,29 @@ footer {
     margin: 10px;
 }
 
+.footer_titre {
+    color: var(--dore);
+    font-size: var(--big-uppercase);
+    font-family: var(--maven-pro);
+    font-weight: var(--medium);
+    text-transform: uppercase;
+}
+
 .footer_lien {
+    color: var(--blanc);
     font-size: var(--small-uppercase);
     font-family: var(--maven-pro);
-    background-color: blue;
+    font-weight: var(--regular);
+    text-transform: uppercase;
+}
+
+.footer_infos {
+    color: aqua;
+    text-align: center;
+    font-size: var(--infos-pratiques);
+    font-family: var(--lato);
+}
+
+.footer_adress {
+    color: var(--blanc);
 }
