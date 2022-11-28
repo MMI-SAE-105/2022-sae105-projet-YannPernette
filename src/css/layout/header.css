@@ -1,0 +1,9 @@
+header {
+    background-color: var(--noir);
+}
+
+.header__menuBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }

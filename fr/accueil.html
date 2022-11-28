@@ -13,7 +13,12 @@
 
     <header>
         <a href="accueil.html" id="haut-de-page"><img src="../public/img/header/Logo.webp" alt="Logo Continuous Evolution"></a>
-        <img src="../public/icon/menu.svg" alt="Ouvrir le menu"></a>
+
+        <button 
+        class="header__menuBtn menuBtn"
+        @click="menuIsOpen = !menuIsOpen">
+        <span class="menuBtn__bar"></span>
+      </button>
     </header>
     
     <main>

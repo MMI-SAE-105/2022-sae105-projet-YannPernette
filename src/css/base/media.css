@@ -4,6 +4,7 @@ img {
 
 h2 {
     background-image: url(../../../public/img/header/background.webp);
+    background-size: cover;
 }
 
 .img_article {

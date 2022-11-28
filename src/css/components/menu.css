@@ -1,0 +1,25 @@
+.menuBtn {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .menuBtn__bar,
+  .menuBtn__bar::before,
+  .menuBtn__bar::after {
+    content: "";
+    background-color: var(--black);
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+  }
+  
+  
+  .menuBtn__bar::before {
+    top: -10px;
+  }
+  
+  .menuBtn__bar::after {
+    top: 10px;
+  }

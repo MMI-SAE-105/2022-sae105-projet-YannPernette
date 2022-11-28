@@ -24,7 +24,11 @@ Soyez attentifs à l'ordre d'import :
 @import "base/main.css";
 @import "base/media.css";
 
+/* Règles de composition */
+@import "layout/header.css";
+
 /* Composants */
 @import "components/card.css";
 @import "components/frise.css";
 @import "components/footer.css";
+@import "components/menu.css";
