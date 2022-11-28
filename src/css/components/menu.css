@@ -1,3 +1,19 @@
+.menu {
+    color: var(--blanc);
+    background-color: var(--noir);
+}
+
+.menu_title {
+    font-size: var(--big-uppercase);
+    font-family: var(--maven-pro);
+}
+
+
+
+
+
+
+
 .menuBtn {
     width: 30px;
     height: 30px;
