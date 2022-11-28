@@ -3,9 +3,9 @@
     height: 30px;
   }
   
-  .menuBtn__bar,
-  .menuBtn__bar::before,
-  .menuBtn__bar::after {
+  .menuBtn_bar,
+  .menuBtn_bar::before,
+  .menuBtn_bar::after {
     content: "";
     background-color: var(--black);
     height: 2px;
@@ -16,10 +16,10 @@
   }
   
   
-  .menuBtn__bar::before {
+  .menuBtn_bar::before {
     top: -10px;
   }
   
-  .menuBtn__bar::after {
+  .menuBtn_bar::after {
     top: 10px;
   }

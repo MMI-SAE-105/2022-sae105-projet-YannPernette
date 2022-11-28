@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen: false }">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +7,39 @@
     <title>Continuous Evolution</title>
     <link rel="shortcut icon" href="../public/icon/adn_logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="../src/css/style.css">
+    <!-- Importation Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body>
 
     <header>
-        <a href="accueil.html" id="haut-de-page"><img src="../public/img/header/Logo.webp" alt="Logo Continuous Evolution"></a>
+        <a href="accueil.html" id="haut-de-page"><img class="header_logo" src="../public/img/header/Logo.webp" alt="Logo Continuous Evolution"></a>
 
         <button 
-        class="header__menuBtn menuBtn"
-        @click="menuIsOpen = !menuIsOpen">
-        <span class="menuBtn__bar"></span>
-      </button>
+            class="header_menuBtn menuBtn"
+            @click="menuIsOpen = !menuIsOpen">
+            <span class="menuBtn_bar"></span>
+        </button>
+
+        <nav>
+            <h3>Accueil</h3>
+            <h3>Articles</h3>
+            <ul>
+                <li>Champ de tir d'Alamogordo</li>
+                <li>Evolution</li>
+                <li>Pacific Rim</li>
+                <li>Infinite Power</li>
+                <li>Changement Climatique</li>
+                <li>Projet Neom</li>
+            </ul>
+            <h3>Informations</h3>
+            <ul>
+                <li>Contact</li>
+                <li>À Propos</li>
+                <li>Glossaire</li>
+            </ul>
+        </nav>
     </header>
     
     <main>
