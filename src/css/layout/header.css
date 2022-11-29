@@ -9,7 +9,12 @@
 }
 
 .header_logo {
-    width: 60%;
+    width: 100%;
+}
+
+.header_adn {
+    margin-top: -70px;
+    width: 90%;
 }
 
 .menubtn {
