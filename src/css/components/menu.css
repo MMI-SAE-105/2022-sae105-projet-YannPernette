@@ -1,9 +1,12 @@
 .menu {
+  position: fixed;
+  gap: 20px;
     color: var(--blanc);
     background-color: var(--noir);
     font-size: var(--small-uppercase);
     font-family: var(--maven-pro);
     text-transform: uppercase;
+    line-height: 25px;
 }
 
 .menu_title, .menu_titlecolor {
@@ -16,32 +19,14 @@
   color: var(--dore);
 }
 
+.menu_linkarticle {
+  color: var(--blanc);
+  display: flex;
+  gap: 7px;
+  line-height: 25px;
+}
 
-
-
-
-.menuBtn {
-    width: 30px;
-    height: 30px;
-  }
-  
-  .menuBtn_bar,
-  .menuBtn_bar::before,
-  .menuBtn_bar::after {
-    content: "";
-    background-color: var(--black);
-    height: 2px;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    z-index: 2;
-  }
-  
-  
-  .menuBtn_bar::before {
-    top: -10px;
-  }
-  
-  .menuBtn_bar::after {
-    top: 10px;
-  }
+.menu_icon {
+  width: 7%;
+  height: auto;
+}

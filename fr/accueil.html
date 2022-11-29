@@ -17,21 +17,25 @@
         <a href="accueil.html" id="haut-de-page"><img class="header_logo" src="../public/img/header/Logo.webp" alt="Logo Continuous Evolution"></a>
 
         <button 
-            class="header_menuBtn menuBtn"
+            class="menubtn"
             @click="menuIsOpen = !menuIsOpen">
-            <span class="menuBtn_bar"></span>
+            <span class="menubtn_bar"></span>
+        </button>
+
+        <button>
+            <span class="languebtn"></span>
         </button>
 
         <nav class="menu" x-show="menuIsOpen">
             <h3 class="menu_title">Accueil</h3>
             <h3 class="menu_titlecolor">Articles</h3>
             <ul>
-                <li>Champ de tir d'Alamogordo</li>
-                <li>Evolution</li>
-                <li>Pacific Rim</li>
-                <li>Infinite Power</li>
-                <li>Changement Climatique</li>
-                <li>Projet Neom</li>
+                <li><a class="menu_linkarticle" href="alamogordo.html"><img class="menu_icon" src="../public/icon/menu/lieu.svg" alt="icône lieu">Champ de tir d'Alamogordo</a></li>
+                <li><a class="menu_linkarticle" href="evolution.html"><img class="menu_icon" src="../public/icon/menu/livre.svg" alt="icône lieu">Evolution</a></li>
+                <li><a class="menu_linkarticle" href="pacific_rim.html"><img class="menu_icon" src="../public/icon/menu/film.svg" alt="icône lieu">Pacific Rim</a></li>
+                <li><a class="menu_linkarticle" href="infinite_power.html"><img class="menu_icon" src="../public/icon/menu/musique.svg" alt="icône lieu">Infinite Power</a></li>
+                <li><a class="menu_linkarticle" href="changement_climatique.html"><img class="menu_icon" src="../public/icon/menu/crainte.svg" alt="icône lieu">Changement Climatique</a></li>
+                <li><a class="menu_linkarticle" href="projet_neom.html"><img class="menu_icon" src="../public/icon/menu/espoir.svg" alt="icône lieu">Projet Neom</a></li>
             </ul>
             <h3 class="menu_titlecolor">Informations</h3>
             <ul>

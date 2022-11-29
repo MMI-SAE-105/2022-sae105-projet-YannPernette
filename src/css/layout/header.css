@@ -1,13 +1,37 @@
-/* header {
-    /* background-color: var(--noir); */
-/* } */
-
-.header_logo {
-    width: 20%;
+header {
+    background-color: var(--noir);
 }
 
-.header_menuBtn {
+.header_logo {
+    width: 60%;
+}
+
+.menubtn {
+    color: red;
     position: absolute;
-    top: 20px;
+    top: 0px;
     right: 20px;
+    width: 40px;
+    height: 40px;
   }
+  
+.menubtn_bar,
+.menubtn_bar::before,
+.menubtn_bar::after {
+    content: "";
+    background-color: var(--blanc);
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+}
+  
+  
+.menubtn_bar::before {
+    top: -10px;
+}
+  
+.menubtn_bar::after {
+    top: 10px;
+}
