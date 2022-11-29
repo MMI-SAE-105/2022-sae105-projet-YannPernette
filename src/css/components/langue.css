@@ -1,0 +1,24 @@
+.languebtn {
+    width: 70px;
+    height: 45px;
+    /* position: absolute; */
+    top: 10px;
+    left: 220px;
+    padding: 5px;
+    border: solid 2px var(--blanc);
+    border-radius: 4px;
+}
+
+.triangle {
+    display : inline-block;
+    height : 7px;
+    width : 0;
+    border-top : 15px solid var(--blanc);
+    border-right : 9px solid transparent;
+    border-left : 9px solid transparent;
+}
+
+.langue_img {
+    width: 60%;
+    height: auto;
+}

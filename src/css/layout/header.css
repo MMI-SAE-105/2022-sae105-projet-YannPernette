@@ -1,5 +1,11 @@
-header {
+.header {
+    display: flex;
     background-color: var(--noir);
+    padding-top: 8px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
 }
 
 .header_logo {
@@ -7,12 +13,11 @@ header {
 }
 
 .menubtn {
-    color: red;
     position: absolute;
-    top: 0px;
-    right: 20px;
+    top: 3px;
+    right: 30px;
     width: 40px;
-    height: 40px;
+    height: 70px;
   }
   
 .menubtn_bar,
@@ -20,18 +25,18 @@ header {
 .menubtn_bar::after {
     content: "";
     background-color: var(--blanc);
-    height: 2px;
+    height: 5px;
     width: 100%;
     position: absolute;
     left: 0;
     z-index: 2;
+    border-radius: 2px;
 }
   
-  
 .menubtn_bar::before {
-    top: -10px;
+    top: -13px;
 }
   
 .menubtn_bar::after {
-    top: 10px;
+    top: 13px;
 }

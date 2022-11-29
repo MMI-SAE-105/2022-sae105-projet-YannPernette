@@ -3,6 +3,7 @@ img {
 }
 
 h2 {
+    /* margin-top: 50px; */
     background-image: url(../../../public/img/header/background.webp);
     background-size: cover;
 }
