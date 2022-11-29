@@ -1,14 +1,20 @@
 .menu {
     color: var(--blanc);
     background-color: var(--noir);
+    font-size: var(--small-uppercase);
+    font-family: var(--maven-pro);
+    text-transform: uppercase;
 }
 
-.menu_title {
+.menu_title, .menu_titlecolor {
     font-size: var(--big-uppercase);
     font-family: var(--maven-pro);
+    text-transform: uppercase;
 }
 
-
+.menu_titlecolor {
+  color: var(--dore);
+}
 
 
 
