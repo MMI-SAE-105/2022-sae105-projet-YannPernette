@@ -7,6 +7,8 @@
     <title>Continuous Evolution</title>
     <link rel="shortcut icon" href="../public/icon/adn_logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="../src/css/style.css">
+    <link href="https://unpkg.com/cloudinary-video-player@1.9.4/dist/cld-video-player.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/cloudinary-video-player@1.9.4/dist/cld-video-player.min.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -39,6 +41,15 @@
             <h3>Enjeux et récompenses</h3>
             <p>Les Jaegers sont contrôlés par 2 pilotes liés par la « dérive ». La dérive est une technique permettant de synchroniser 2 humains par le biais d’un pont neuronal. Au début, les Jaegers remportent de nombreuses victoires mais très vite les kaijus évoluent. Ils deviennent plus dangereux et les Jaegers sont obsolètes. Il revient donc à Raleigh Becket et à Mako Mori de tenter un ultime assaut à bord du tout dernier Jaeger restant pour détruire une bonne fois pour toutes la faille d’où sortent les kaijus. Pacific Rim est réalisé par Guillermo del Toro et a remporté le prix de meilleurs effets spéciaux et visuels de l’année 2013. En effet Pacific Rim est un film de « Mecha ». D’immenses robots futuristes combattent le plus souvent contre des monstres gigantesques. Ici, ils se battent contre des kaijus, le film est donc un kaiju eiga.</p>
         </section>
+
+        <video
+            width=375
+            height=200
+            id="bande_annonce"
+            controls
+            muted
+            class="cld-video-player cld-video-player-skin-dark">
+        </video>
 
         <figure>
             <img class="img_article" src="../public/img/articles/pacific_rim/pacific_rim_kaiju.webp" alt="Kaiju de Pacific Rim">
@@ -89,6 +100,13 @@
         <p>“projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com">MMi de Montbéliard</a>“ </p>
         <address><a href="mailto:yann.pernette@edu.univ-fcomte.fr">By Yann PERNETTE MMI1 B2</a></address>
     </footer>
+
+    <script>
+        var cld = cloudinary.videoPlayer('bande_annonce', { 
+        cloud_name: 'drlzu9fow', //remplacer par votre id cloudinary 
+        sourceTypes: ['hls','dash','webm/vp9','mp4/h265','mp4']});
+        cld.source('Pacific_Rim_Bande_Annonce_Officielle__VF_mpdzyz.mp4'); //à remplacer après avoir uploader une vidéo
+    </script>
 
 </body>
 

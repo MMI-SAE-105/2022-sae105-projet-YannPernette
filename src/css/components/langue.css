@@ -1,9 +1,6 @@
 .languebtn {
     width: 70px;
     height: 45px;
-    /* position: absolute; */
-    top: 10px;
-    left: 220px;
     padding: 5px;
     border: solid 2px var(--blanc);
     border-radius: 4px;
@@ -19,6 +16,8 @@
 }
 
 .langue_img {
+    position: relative;
+    top: -1.2px;
     width: 60%;
     height: auto;
 }

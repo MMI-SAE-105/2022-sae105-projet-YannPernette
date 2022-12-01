@@ -9,7 +9,8 @@
 }
 
 .header_logo {
-    width: 100%;
+    width: 130%;
+    height: auto;
 }
 
 .header_adn {
@@ -19,8 +20,8 @@
 
 .menubtn {
     position: absolute;
-    top: 3px;
-    right: 30px;
+    top: -3px;
+    right: 22px;
     width: 40px;
     height: 70px;
   }
@@ -44,4 +45,10 @@
   
 .menubtn_bar::after {
     top: 13px;
+}
+
+.languebtn {
+    position: absolute;
+    top: 12px;
+    right: 80px;
 }

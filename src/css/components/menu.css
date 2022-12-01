@@ -1,6 +1,10 @@
 .menu {
   position: fixed;
-  gap: 20px;
+  top: 0px;
+  right: 0px;
+  width: 350px;
+  height: 100%;
+  /* gap: 20px; */
     color: var(--blanc);
     background-color: var(--noir);
     font-size: var(--small-uppercase);
