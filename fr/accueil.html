@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{ menuIsOpen: false}">
+<html lang="fr" x-data="{menuIsOpen: false}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,12 +22,7 @@
             <span class="menubtn_bar"></span>
         </button>
 
-        <button class="languebtn">
-            <img class="langue_img" src="../public/img/header/france.webp" alt="Français">
-            <span class="triangle"></span>
-        </button>
-
-        <nav class="menu" @click="menuIsOpen =! menuIsOpen" :class="{'actif' : menuIsOpen == true}" x-transition.2s>
+        <nav class="menu" @click="menuIsOpen =! menuIsOpen" :class="{'actif' : menuIsOpen == false}">
             <h3 class="menu_title">Accueil</h3>
             <h3 class="menu_titlecolor">Articles</h3>
             <ul>
@@ -45,6 +40,24 @@
                 <li>Glossaire</li>
             </ul>
         </nav>
+
+        <div x-data="{langueIsOpen: false}">
+            <button
+                class="languebtn"
+                @click="langueIsOpen =! langueIsOpen">
+                <img class="langue_img" src="../public/img/header/france.webp" alt="Français">
+                <span class="triangle"></span>
+            </button>
+
+            <nav class="langue" @click="langueIsOpen =! langueIsOpen" :class="{'actif' : langueIsOpen == false}">
+                <h3 class="menu_titlecolor">Langues</h3>
+                <ul>
+                    <li><img class="langue_img" src="../public/img/header/france.webp" alt="Français">Français</li>
+                    <li><img class="langue_img" src="../public/img/header/royaume_uni.webp" alt="English">English</li>
+                    <li></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
     <main>
@@ -114,7 +127,7 @@
     </main>
 
     <footer class="footer">
-        <img class="footer_img" src="../public/img/elements/adn transi.svg" alt="transition ADN">
+        <img class="footer_adn" src="../public/img/elements/adn_transi_b.svg" alt="transition ADN">
 
         <a class="footer_titre" href="#haut-de-page">Haut de page</a>
 

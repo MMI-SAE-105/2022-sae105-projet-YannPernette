@@ -2,7 +2,11 @@
     background-color: var(--noir);
     margin: 0px;
     padding: 0px;
+}
 
+.footer_adn {
+    margin-top: -31px;
+    width: 100%;
 }
 
 .footer_img {

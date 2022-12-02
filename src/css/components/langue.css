@@ -23,5 +23,15 @@
 }
 
 .langue {
-    
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 250px;
+    height: 100%;
+    color: var(--blanc);
+    background-color: var(--bleu);
+    font-size: var(--small-uppercase);
+    font-family: var(--maven-pro);
+    text-transform: uppercase;
+    line-height: 25px;
 }

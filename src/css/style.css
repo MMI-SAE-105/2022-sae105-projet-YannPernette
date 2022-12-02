@@ -26,6 +26,7 @@ Soyez attentifs à l'ordre d'import :
 
 /* Règles de composition */
 @import "layout/header.css";
+@import "layout/footer.css";
 
 /* Composants */
 @import "components/card.css";
