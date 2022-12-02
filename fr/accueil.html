@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{ menuIsOpen: false }">
+<html lang="fr" x-data="{ menuIsOpen: false}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,7 +27,7 @@
             <span class="triangle"></span>
         </button>
 
-        <nav class="menu" x-show="menuIsOpen">
+        <nav class="menu" @click="menuIsOpen =! menuIsOpen" :class="{'actif' : menuIsOpen == true}" x-transition.2s>
             <h3 class="menu_title">Accueil</h3>
             <h3 class="menu_titlecolor">Articles</h3>
             <ul>

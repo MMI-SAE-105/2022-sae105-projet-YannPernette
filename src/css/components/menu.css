@@ -2,21 +2,28 @@
   position: fixed;
   top: 0px;
   right: 0px;
-  width: 350px;
+  width: 250px;
   height: 100%;
-  /* gap: 20px; */
-    color: var(--blanc);
-    background-color: var(--noir);
-    font-size: var(--small-uppercase);
-    font-family: var(--maven-pro);
-    text-transform: uppercase;
-    line-height: 25px;
+  color: var(--blanc);
+  background-color: var(--bleu);
+  font-size: var(--small-uppercase);
+  font-family: var(--maven-pro);
+  text-transform: uppercase;
+  line-height: 25px;
+  /* transition: 0.4s transform cubic-bezier(.28,.16,.63,1.2); */
 }
 
 .menu_title, .menu_titlecolor {
-    font-size: var(--big-uppercase);
-    font-family: var(--maven-pro);
-    text-transform: uppercase;
+  padding: 20px;
+  margin-bottom: -30px;
+  font-size: var(--big-uppercase);
+  font-family: var(--maven-pro);
+  text-transform: uppercase;
+
+}
+
+.menu_title {
+  margin-top: 60px;
 }
 
 .menu_titlecolor {
@@ -33,4 +40,8 @@
 .menu_icon {
   width: 7%;
   height: auto;
+}
+
+.actif {
+  transform: translate(1000px);
 }
