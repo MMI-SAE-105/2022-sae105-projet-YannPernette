@@ -10,7 +10,8 @@
   font-family: var(--maven-pro);
   text-transform: uppercase;
   line-height: 25px;
-  /* transition: 0.4s transform cubic-bezier(.28,.16,.63,1.2); */
+  transition: 0.4s transform cubic-bezier(.5,.75,0,.99);
+  transform: initial;
 }
 
 .menu_title, .menu_titlecolor {
@@ -43,5 +44,5 @@
 }
 
 .actif {
-  transform: translate(1000px);
+  transform: translateX(1000px);
 }
