@@ -41,7 +41,7 @@
 }
 
 .menu_icon {
-  width: 7%;
+  width: 10%;
   height: auto;
 }
 
@@ -67,4 +67,13 @@
   height: 1.5px;
   top: 418px;
   left: 10px;
+}
+
+.menu_social {
+  display: flex;
+  gap: 15px;
+  width: 60%;
+  height: auto;
+  margin-top: 60px;
+  margin-left: -40px;
 }
