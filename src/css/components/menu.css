@@ -16,8 +16,8 @@
 }
 
 .menu_title, .menu_titlecolor {
-  padding: 20px;
-  margin-bottom: -15px;
+  padding: 10px;
+  margin-bottom: -5px;
   font-size: var(--big-uppercase);
   font-family: var(--maven-pro);
   text-transform: uppercase;
@@ -47,4 +47,24 @@
 
 .actif {
   transform: translateX(100%);
+}
+
+.menu_lineA {
+  content: "";
+  position: absolute;
+  background-color: var(--blanc);
+  width: 150px;
+  height: 1.5px;
+  top: 107px;
+  left: 6px;
+}
+
+.menu_lineB {
+  content: "";
+  position: absolute;
+  background-color: var(--nuance-dore);
+  width: 180px;
+  height: 1.5px;
+  top: 418px;
+  left: 10px;
 }
