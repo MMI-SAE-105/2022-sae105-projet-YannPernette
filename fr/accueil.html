@@ -26,6 +26,7 @@
 
         <nav class="menu" @click="menuIsOpen =! menuIsOpen" :class="{'actif' : menuIsOpen == false}">           
             <h3 class="menu_title">Accueil</h3>
+            <div class="menu_lineA"></div>
             <h3 class="menu_titlecolor">Articles</h3>
             <ul>
                 <li><a class="menu_linkarticle" href="alamogordo.html"><img class="menu_icon" src="../public/icon/menu/lieu.svg" alt="icône lieu">Champ de tir d'Alamogordo</a></li>
@@ -35,11 +36,12 @@
                 <li><a class="menu_linkarticle" href="changement_climatique.html"><img class="menu_icon" src="../public/icon/menu/crainte.svg" alt="icône lieu">Changement Climatique</a></li>
                 <li><a class="menu_linkarticle" href="projet_neom.html"><img class="menu_icon" src="../public/icon/menu/espoir.svg" alt="icône lieu">Projet Neom</a></li>
             </ul>
+            <div class="menu_lineB"></div>
             <h3 class="menu_titlecolor">Informations</h3>
             <ul>
-                <li>Contact</li>
-                <li>À Propos</li>
-                <li>Glossaire</li>
+                <li><a class="menu_linkarticle" href="contact.html"><img class="menu_icon" src="../public/icon/menu/send.svg" alt="icône lieu">Contact</a></li>
+                <li><a class="menu_linkarticle" href="a_propos.html"><img class="menu_icon" src="../public/icon/menu/user.svg" alt="icône lieu">À Propos</a></li>
+                <li><a class="menu_linkarticle" href="glossaire.html"><img class="menu_icon" src="../public/icon/menu/tag.svg" alt="icône lieu">Glossaire</a></li>
             </ul>
         </nav>
 
