@@ -19,14 +19,6 @@
     text-transform: uppercase;
 }
 
-.footer_lien {
-    color: var(--blanc);
-    font-size: var(--small-uppercase);
-    font-family: var(--maven-pro);
-    font-weight: var(--regular);
-    text-transform: uppercase;
-}
-
 .footer_info {
     display: block;
     color: var(--blanc);
@@ -36,6 +28,7 @@
     padding: 5px;
     margin: 0;
     font-weight: var(--medium);
+    margin-top: 10px;
 }
 
 .footer_lienmmi {
@@ -44,27 +37,21 @@
 }
 
 .footer_res {
-    display: inline-block;
-    width: 15%;
-    padding: 5px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    gap: 10px;
 }
 
 .footer_mmi {
-    width: 15%;
-    padding: 5px;
-    left: 200px;
+    width: 60px;
+    margin-left: 20px;
 }
 
 .footer > ul {
-    padding: 10px;
+    padding-left: 30%;
 }
 
-.footer_contenu {
+.footer_montbe {
     display: flex;
-    flex-wrap: wrap;
-    gap: 49px;
-    justify-content: center;
-    line-height: 0px;
-    column-count: 2;
-    column-gap: 1em;
 }
