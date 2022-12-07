@@ -54,3 +54,17 @@
     padding: 5px;
     left: 200px;
 }
+
+.footer > ul {
+    padding: 10px;
+}
+
+.footer_contenu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 49px;
+    justify-content: center;
+    line-height: 0px;
+    column-count: 2;
+    column-gap: 1em;
+}
