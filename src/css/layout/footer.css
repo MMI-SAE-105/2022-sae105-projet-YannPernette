@@ -1,5 +1,5 @@
 .footer {
-    background-color: var(--noir);
+    background-color: var(--bleu);
     margin: 0px;
     margin-top: 70px;
     padding: 0px;
@@ -8,10 +8,6 @@
 .footer_adn {
     margin-top: -31px;
     width: 100%;
-}
-
-.footer_img {
-    margin: 10px;
 }
 
 .footer_titre {
@@ -30,13 +26,28 @@
     text-transform: uppercase;
 }
 
-.footer_infos {
-    color: aqua;
+.footer_info {
+    display: block;
+    color: var(--blanc);
     text-align: center;
     font-size: var(--infos-pratiques);
     font-family: var(--lato);
+    padding: 5px;
+    margin: 0;
+    font-weight: var(--medium);
 }
 
-.footer_adress {
-    color: var(--blanc);
+.footer_lienmmi {
+    color: blue;
+}
+
+.footer_res {
+    display: inline-block;
+    width: 15%;
+    padding: 5px;
+}
+
+.footer_mmi {
+    width: 15%;
+    padding: 5px;
 }

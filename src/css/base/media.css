@@ -19,14 +19,3 @@ h2 {
     border-radius: 10px;
     box-shadow: var(--ombres-images);
 }
-
-.icon_res {
-    display: inline-block;
-    width: 15%;
-    padding: 5px;
-}
-
-.logo_mmi {
-    width: 15%;
-    padding: 5px;
-}
