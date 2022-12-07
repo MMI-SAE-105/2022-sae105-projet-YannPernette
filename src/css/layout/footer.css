@@ -11,6 +11,7 @@
 }
 
 .footer_titre {
+    text-align: center;
     color: var(--dore);
     font-size: var(--big-uppercase);
     font-family: var(--maven-pro);
@@ -38,7 +39,8 @@
 }
 
 .footer_lienmmi {
-    color: blue;
+    color: var(--bleulink);
+    text-decoration: underline;
 }
 
 .footer_res {
@@ -50,4 +52,5 @@
 .footer_mmi {
     width: 15%;
     padding: 5px;
+    left: 200px;
 }
