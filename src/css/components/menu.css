@@ -2,7 +2,7 @@
   z-index: 5;
   position: fixed;
   top: 0px;
-  right: 0px;
+  right: 0%;
   width: 250px;
   height: 100%;
   color: var(--blanc);
@@ -12,7 +12,7 @@
   text-transform: uppercase;
   line-height: 25px;
   transition: 0.4s transform cubic-bezier(.5,.75,0,.99);
-  transform: initial;
+  transform: translateX(100%);
 }
 
 .menu_title, .menu_titlecolor {
@@ -46,7 +46,7 @@
 }
 
 .actif {
-  transform: translateX(100%);
+  transform: initial;
 }
 
 .menu_lineA {
