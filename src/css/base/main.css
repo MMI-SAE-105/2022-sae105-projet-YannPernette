@@ -23,6 +23,8 @@ h3 {
     font-size: var(--sous-titre);
     font-family: var(--josefin-sans);
     font-weight: var(--medium);
+    text-decoration: underline var(--nuance-dore) 10px;
+    padding-left: 1rem;
 }
 
 h4 {
