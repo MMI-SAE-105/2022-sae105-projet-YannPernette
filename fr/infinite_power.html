@@ -16,7 +16,7 @@
 <body>
     
     <header class="header">
-        <a href="accueil.html" id="haut-de-page"><img class="header_logo" src="../public/img/header/logo.svg" alt="Logo Continuous Evolution"></a>
+        <a href="index.html" id="haut-de-page"><img class="header_logo" src="../public/img/header/logo.svg" alt="Logo Continuous Evolution"></a>
 
         <button 
             class="menubtn"
@@ -24,7 +24,7 @@
             <span class="menubtn_bar"></span>
         </button>
 
-        <nav class="menu" @click="menuIsOpen =! menuIsOpen" :class="{'actif' : menuIsOpen == false}">           
+        <nav class="menu" @click="menuIsOpen =! menuIsOpen" :class="{'actif' : menuIsOpen == true}">           
             <h3 class="menu_title">Accueil</h3>
             <div class="menu_lineA"></div>
             <h3 class="menu_titlecolor">Articles</h3>
