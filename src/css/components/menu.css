@@ -21,11 +21,12 @@
   font-size: var(--big-uppercase);
   font-family: var(--maven-pro);
   text-transform: uppercase;
+  text-decoration: none;
 
 }
 
 .menu_title {
-  margin-top: 60px;
+  margin-top: 70px;
 }
 
 .menu_titlecolor {
@@ -55,7 +56,7 @@
   background-color: var(--blanc);
   width: 150px;
   height: 1.5px;
-  top: 107px;
+  top: 117px;
   left: 6px;
 }
 
@@ -65,7 +66,7 @@
   background-color: var(--nuance-dore);
   width: 180px;
   height: 1.5px;
-  top: 418px;
+  top: 428px;
   left: 10px;
 }
 
