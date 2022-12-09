@@ -70,10 +70,11 @@
 }
 
 .menu_social {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
   display: flex;
   gap: 15px;
   width: 60%;
   height: auto;
-  margin-top: 60px;
-  margin-left: -40px;
 }
