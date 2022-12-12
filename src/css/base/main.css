@@ -55,10 +55,12 @@ blockquote {
     font-size: var(--small-uppercase);
     font-family: var(--maven-pro);
     text-transform: uppercase;
+}
+
+.blockquote {
     background-color: var(--nuance-dore);
-    border-radius: 0% 100% 0% 100% / 70% 40% 70% 40%;
-    padding: 24px 20px 18px 10px;
-    /* margin: auto; */
+    padding: 10px;
+    /* rotate: 5deg; */
 }
 
 li {
