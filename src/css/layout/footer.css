@@ -39,8 +39,7 @@
 .footer_res {
     display: flex;
     justify-content: center;
-    width: 50%;
-    gap: 10px;
+    gap: 20px;
     margin: 0%;
     padding: 0%;
 }
