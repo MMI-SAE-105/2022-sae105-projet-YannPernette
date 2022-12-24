@@ -71,5 +71,26 @@
     
     <main>
 
-        <h2>De l’époque des dinosaures à notre futur, le site qui retrace l’évolution du monde</h2>
+        <h2>Un problème ou besoin d’une information ? Contactez-nous !</h2>
         <img class="header_adn" src="../public/img/elements/adn_transi_a.svg" alt="transition ADN">
+
+        <form class="formulaire" action="" method="get">
+
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="prenom">Prénom</label>
+            <input type="text" name="prenom" id="prenom" required>
+
+            <label for="email">Mail</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="8"></textarea>
+
+            <input type="checkbox" name="accept" id="accept" checked>
+            <label for="accept">J’accepte de recevoir des notifications par mail</label>
+
+            <input type="submit" value="Envoyer">
+
+        </form>
