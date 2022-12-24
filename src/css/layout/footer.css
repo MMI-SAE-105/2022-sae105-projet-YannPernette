@@ -5,6 +5,12 @@
     padding: 0px;
 }
 
+.footer_retour {
+    width: 20%;
+    height: auto;
+    justify-content: center;
+}
+
 .footer_adn {
     margin-top: -31px;
     width: 100%;
