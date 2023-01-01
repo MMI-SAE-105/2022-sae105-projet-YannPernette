@@ -8,7 +8,9 @@
 .footer_retour {
     width: 20%;
     height: auto;
-    justify-content: center;
+    display: flex;
+    align-content: center;
+    transform: rotate(180deg);
 }
 
 .footer_adn {
@@ -16,8 +18,7 @@
     width: 100%;
 }
 
-.footer_titre {
-    text-align: center;
+.footer_lien {
     color: var(--dore);
     font-size: var(--big-uppercase);
     font-family: var(--maven-pro);
@@ -25,7 +26,7 @@
     text-transform: uppercase;
 }
 
-.footer_info {
+.footer_adress {
     display: block;
     color: var(--blanc);
     text-align: center;
@@ -37,6 +38,17 @@
     margin-top: 10px;
 }
 
+.footer_info {
+    display: block;
+    color: var(--blanc);
+    font-size: var(--small-uppercase);
+    font-family: var(--lato);
+    padding: 5px;
+    margin: 0;
+    font-weight: var(--regular);
+    margin-top: 10px;
+}
+
 .footer_lienmmi {
     color: var(--bleulink);
     text-decoration: underline;
@@ -44,7 +56,6 @@
 
 .footer_res {
     display: flex;
-    justify-content: center;
     gap: 20px;
     margin: 0%;
     padding: 0%;
@@ -52,13 +63,14 @@
 
 .footer_mmi {
     width: 60px;
-    margin-left: 20px;
+    right: 0%;
 }
 
 .footer > ul {
     padding-left: 30%;
 }
 
-.footer_montbe {
+.footer_suivre {
     display: flex;
+    align-content: center;
 }
