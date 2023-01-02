@@ -90,3 +90,7 @@ button {
     outline: none;
     cursor: pointer;
   }
+
+dd a {
+    color: #0000FF;
+  }
