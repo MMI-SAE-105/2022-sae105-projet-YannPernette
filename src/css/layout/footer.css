@@ -1,29 +1,36 @@
 .footer {
     background-color: var(--bleu);
-    margin: 0px;
-    margin-top: 70px;
-    padding: 0px;
+    margin-top: 50px;
 }
 
 .footer_retour {
-    width: 20%;
-    height: auto;
-    display: flex;
-    align-content: center;
+    width: 25%;
+    margin: auto;
     transform: rotate(180deg);
 }
 
 .footer_adn {
     margin-top: -31px;
     width: 100%;
+    padding: 0;
 }
 
-.footer_lien {
+.footer_titre {
     color: var(--dore);
     font-size: var(--big-uppercase);
     font-family: var(--maven-pro);
     font-weight: var(--medium);
     text-transform: uppercase;
+    padding: 10px 0 10px 10px;
+    margin: 0;
+}
+
+.footer_lien {
+    color: var(--blanc);
+    font-size: var(--small-uppercase);
+    font-family: var(--maven-pro);
+    text-transform: uppercase;
+    padding-left: 10px;
 }
 
 .footer_adress {
@@ -32,10 +39,11 @@
     text-align: center;
     font-size: var(--infos-pratiques);
     font-family: var(--lato);
-    padding: 5px;
+    padding: 0 0 10px 0;
     margin: 0;
     font-weight: var(--medium);
-    margin-top: 10px;
+    margin-top: 5px;
+    text-decoration: underline 2px;
 }
 
 .footer_info {
@@ -43,10 +51,9 @@
     color: var(--blanc);
     font-size: var(--small-uppercase);
     font-family: var(--lato);
-    padding: 5px;
-    margin: 0;
     font-weight: var(--regular);
-    margin-top: 10px;
+    padding: 0 0 0 10px;
+    margin: 5px 0 20px 0;
 }
 
 .footer_lienmmi {
@@ -57,13 +64,15 @@
 .footer_res {
     display: flex;
     gap: 20px;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0 0 0 10px;
 }
 
 .footer_mmi {
     width: 60px;
-    right: 0%;
+    right: 0;
+    margin-top: -15px;
+    padding-right: 10px;
 }
 
 .footer > ul {
@@ -72,5 +81,5 @@
 
 .footer_suivre {
     display: flex;
-    align-content: center;
+    justify-content: space-between;
 }
