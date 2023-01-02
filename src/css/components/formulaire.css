@@ -71,4 +71,5 @@
     font-family: var(--maven-pro);
     font-weight: var(--bold);
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
