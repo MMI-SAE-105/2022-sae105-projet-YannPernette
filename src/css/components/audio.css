@@ -1,0 +1,14 @@
+.audio_titre {
+    /* text-align: center; */
+    padding: 10px 10px 6px 10px;
+    margin-left: 30px;
+    margin-right: 115px;
+    color: var(--dore);
+    background-color: var(--noir);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.audio_bouton {
+    margin: -32px 0 30px 10px;
+}
