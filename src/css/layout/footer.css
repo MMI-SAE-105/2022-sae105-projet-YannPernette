@@ -6,7 +6,7 @@
 .footer_retour {
     width: 25%;
     margin: auto;
-    transform: rotate(180deg);
+    /* transform: rotate(180deg); */
 }
 
 .footer_adn {
