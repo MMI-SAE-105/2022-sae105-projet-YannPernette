@@ -1,5 +1,32 @@
+.container {
+    column-count: 2;
+    column-gap: 10px;
+    padding: 10px;
+}
+
 .projet {
+    display: grid;
+    width: 171px;
+    height: 114px;
+}
+
+.projet_titre {
+    text-align: center;
     font-size: var(--texte-basique);
     font-family: var(--arimo);
-    color: red;
+    color: black;
+    background-color: var(--nuance-dore);
+    padding: 8px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: -16px;
+}
+
+.projet_nom {
+    text-align: center;
+    color: var(--dore);
+    background-color: var(--noir);
+    padding: 8px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
