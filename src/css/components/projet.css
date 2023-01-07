@@ -1,0 +1,5 @@
+.projet {
+    font-size: var(--texte-basique);
+    font-family: var(--arimo);
+    color: red;
+}
