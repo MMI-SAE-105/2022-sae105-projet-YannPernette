@@ -35,20 +35,21 @@
     transform: translateY(-50%); /* methode du point mort */
     width: 2rem;
     height: 2rem;
-    background: rgba(0,0,0,0.5);
+    background: var(--noir);
     border-radius: 50%;
     border: none;
     display: grid;
     place-content: center;
-    color: #fff;
+    color: var(--dore);
+    font-family: var(--josefin-sans);
 }
   
 .carrousel_btn-avant {
-    left: 0;
+    left: 1.5px;
 }
   
 .carrousel_btn-apres {
-    right: 0;
+    right: 1.5px;
 }
 
 .carrousel a {
