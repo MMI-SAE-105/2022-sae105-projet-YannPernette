@@ -2,9 +2,10 @@
     box-sizing: border-box;
 }
 
-img {
+.carrousel img {
     width: 100%;
     height: auto;
+    opacity: 60%;
 }
 
 .carrousel_parent-ecrans {
@@ -16,7 +17,7 @@ img {
 }
 
 .carrousel_ecran {
-    width: 100%;
+    width: 70%;
     flex: none;
     scroll-snap-align: start;
 }
@@ -68,9 +69,6 @@ img {
     gap: 1rem;
 }
 
-.actif {
-    padding: 10px;
-    color: white;
-    background-color: black;
-    border-radius: 5px;
+.carrousel_actif {
+    opacity: 100%;
 }

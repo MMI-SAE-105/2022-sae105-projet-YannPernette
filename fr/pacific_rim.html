@@ -121,8 +121,10 @@
 
         <h1>Filmographie de Guillermo del Torro</h1>
 
-        <div class="carrousel" x-data="{hrefCourant: '#ecran-1'}">
-                <button @click="const p = $refs.parent ; p.scrollLeft -= p.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant">&lt</button><button @click="const p = $refs.parent ; p.scrollLeft += p.clientWidth" class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">&gt</button>
+        <div class="carrousel" x-data="{image_active: 0}">
+                <!-- <button @click="const p = $refs.parent ; p.scrollLeft -= p.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant">&lt</button><button @click="const p = $refs.parent ; p.scrollLeft += p.clientWidth" class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">&gt</button> -->
+                <button @click = "image_active -= 1">Précédent</button>
+                <button @click = "image_active += 1">Suivant</button>
                 <div class="carrousel_parent-ecrans" x-ref="parent" 
                         @scroll.debounce.250ms.passive="
                 hrefCourant = '#'+
@@ -131,45 +133,68 @@
                                    .id
                                                      "
                 >
-                    <div id="ecran-1" class="carrousel_ecran">
+                    <div class="carrousel_ecran" :class="{'carrousel_actif': image_active === 0}">
                         <figure>
-                            <img src="https://picsum.photos/seed/1/500/300" alt="image ecran 1">
-                            <figcaption>Ecran 1</figcaption>
+                            <img src="../public/img/articles/pacific_rim/carrousel/cronos.webp" alt="image ecran 1">
+                            <figcaption>1993 - Genre : Horreur</figcaption>
                         </figure>
                     </div>
-                    <div id="ecran-2" class="carrousel_ecran">
+                    <div class="carrousel_ecran" :class="{'actif': image_active === 1}">
                         <figure>
-                            <img src="https://picsum.photos/seed/2/500/300" alt="image ecran 2">
+                            <img src="../public/img/articles/pacific_rim/carrousel/mimic.webp" alt="image ecran 2">
                             <figcaption>Ecran 2</figcaption>
                         </figure>
                     </div>
                     <div id="ecran-3" class="carrousel_ecran">
                         <figure>
-                            <img src="https://picsum.photos/seed/3/500/300" alt="image ecran 3">
+                            <img src="../public/img/articles/pacific_rim/carrousel/lechine_du_diable.webp" alt="image ecran 3">
                             <figcaption>Ecran 3</figcaption>
                         </figure>
                     </div>
                     <div id="ecran-4" class="carrousel_ecran">
                         <figure>
-                            <img src="https://picsum.photos/seed/4/500/300" alt="image ecran 4">
+                            <img src="../public/img/articles/pacific_rim/carrousel/blade_deux.webp" alt="image ecran 4">
                             <figcaption>Ecran 4</figcaption>
                         </figure>
                     </div>
                     <div id="ecran-5" class="carrousel_ecran">
                         <figure>
-                            <img src="https://picsum.photos/seed/5/500/300" alt="image ecran 5">
+                            <img src="../public/img/articles/pacific_rim/carrousel/hellboy.webp" alt="image ecran 5">
+                            <figcaption>Ecran 5</figcaption>
+                        </figure>
+                    </div>
+                    <div id="ecran-1" class="carrousel_ecran">
+                        <figure>
+                            <img src="../public/img/articles/pacific_rim/carrousel/le_labyrinthe_de_pan.webp" alt="image ecran 1">
+                            <figcaption>Ecran 1</figcaption>
+                        </figure>
+                    </div>
+                    <div id="ecran-2" class="carrousel_ecran">
+                        <figure>
+                            <img src="../public/img/articles/pacific_rim/carrousel/hellboy_deux.webp" alt="image ecran 2">
+                            <figcaption>Ecran 2</figcaption>
+                        </figure>
+                    </div>
+                    <div id="ecran-3" class="carrousel_ecran">
+                        <figure>
+                            <img src="../public/img/articles/pacific_rim/carrousel/crimson_peak.webp" alt="image ecran 3">
+                            <figcaption>Ecran 3</figcaption>
+                        </figure>
+                    </div>
+                    <div id="ecran-4" class="carrousel_ecran">
+                        <figure>
+                            <img src="../public/img/articles/pacific_rim/carrousel/la_forme_de_leau.webp" alt="image ecran 4">
+                            <figcaption>Ecran 4</figcaption>
+                        </figure>
+                    </div>
+                    <div id="ecran-5" class="carrousel_ecran">
+                        <figure>
+                            <img src="../public/img/articles/pacific_rim/carrousel/nightmare_alley.webp" alt="image ecran 5">
                             <figcaption>Ecran 5</figcaption>
                         </figure>
                     </div>
                 </div>
-                <ul class="caroussel_liste-liens">
-                    <li><a href="#ecran-1" :class="{actif:hrefCourant==='#ecran-1'}" class="caroussel_lien">ecran 1</a></li>
-                    <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}" class="caroussel_lien">ecran 2</a></li>
-                    <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}" class="caroussel_lien">ecran 3</a></li>
-                    <li><a href="#ecran-4" :class="{actif:hrefCourant==='#ecran-4'}" class="caroussel_lien">ecran 4</a></li>
-                    <li><a href="#ecran-5" :class="{actif:hrefCourant==='#ecran-5'}" class="caroussel_lien">ecran 5</a></li>
-                </ul>
-            </div>
+        </div>
 
         <div class="footer_retour"><a href="#"><img src="../public/icon/arrow_circle.svg" alt="Icône de retour en haut de page"></a></div>
     </main>
