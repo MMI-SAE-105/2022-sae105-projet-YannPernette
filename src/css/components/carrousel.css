@@ -1,23 +1,26 @@
 .carrousel {
     box-sizing: border-box;
+    position: relative;
+    padding: 5px 35px 35px 35px;
 }
 
 .carrousel img {
     width: 100%;
     height: auto;
-    opacity: 60%;
+    /* opacity: 60%; */
 }
 
 .carrousel_parent-ecrans {
     display: flex;
     width: 100%;
+    gap: 20px;
     overflow-x: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
 }
 
 .carrousel_ecran {
-    width: 70%;
+    width: 100%;
     flex: none;
     scroll-snap-align: start;
 }
@@ -26,10 +29,6 @@
     margin: 0;
 }
 
-.carrousel {
-    position: relative;
-}
-  
 .carrousel_btn {
     position: absolute;
     top: 50%; /* centre verticalement */
@@ -58,17 +57,8 @@
     text-transform: uppercase;
 }
 
-.caroussel_liste-liens {
-    border: solid;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    margin-top: 30px;
-    padding: 10px 0 8px 0;
-    list-style: none;
-    gap: 1rem;
-}
-
-.carrousel_actif {
-    opacity: 100%;
+.carrousel figcaption {
+    text-align: center;
+    font-size: var(--sous-titre);
+    margin-bottom: 5px;
 }

@@ -121,10 +121,8 @@
 
         <h1>Filmographie de Guillermo del Torro</h1>
 
-        <div class="carrousel" x-data="{image_active: 0}">
-                <!-- <button @click="const p = $refs.parent ; p.scrollLeft -= p.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant">&lt</button><button @click="const p = $refs.parent ; p.scrollLeft += p.clientWidth" class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">&gt</button> -->
-                <button @click = "image_active -= 1">Précédent</button>
-                <button @click = "image_active += 1">Suivant</button>
+        <div class="carrousel" x-data="{image_active: '#ecran-1'}">
+                <button @click="const p = $refs.parent ; p.scrollLeft -= p.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant">&lt</button><button @click="const p = $refs.parent ; p.scrollLeft += p.clientWidth" class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">&gt</button>
                 <div class="carrousel_parent-ecrans" x-ref="parent" 
                         @scroll.debounce.250ms.passive="
                 hrefCourant = '#'+
@@ -133,64 +131,64 @@
                                    .id
                                                      "
                 >
-                    <div class="carrousel_ecran" :class="{'carrousel_actif': image_active === 0}">
+                    <div class="carrousel_ecran">
                         <figure>
-                            <img src="../public/img/articles/pacific_rim/carrousel/cronos.webp" alt="image ecran 1">
+                            <img src="../public/img/articles/pacific_rim/carrousel/cronos.webp" alt="Ecran 1">
                             <figcaption>1993 - Genre : Horreur</figcaption>
                         </figure>
                     </div>
-                    <div class="carrousel_ecran" :class="{'actif': image_active === 1}">
+                    <div class="carrousel_ecran">
                         <figure>
-                            <img src="../public/img/articles/pacific_rim/carrousel/mimic.webp" alt="image ecran 2">
-                            <figcaption>Ecran 2</figcaption>
+                            <img src="../public/img/articles/pacific_rim/carrousel/mimic.webp" alt="Ecran 2">
+                            <figcaption>1997 - Genre : Horreur</figcaption>
                         </figure>
                     </div>
-                    <div id="ecran-3" class="carrousel_ecran">
+                    <div class="carrousel_ecran">
                         <figure>
-                            <img src="../public/img/articles/pacific_rim/carrousel/lechine_du_diable.webp" alt="image ecran 3">
-                            <figcaption>Ecran 3</figcaption>
+                            <img src="../public/img/articles/pacific_rim/carrousel/lechine_du_diable.webp" alt="Ecran 3">
+                            <figcaption>2001 - Genre : Horreur, Drame</figcaption>
                         </figure>
                     </div>
-                    <div id="ecran-4" class="carrousel_ecran">
+                    <div class="carrousel_ecran">
                         <figure>
-                            <img src="../public/img/articles/pacific_rim/carrousel/blade_deux.webp" alt="image ecran 4">
-                            <figcaption>Ecran 4</figcaption>
+                            <img src="../public/img/articles/pacific_rim/carrousel/blade_deux.webp" alt="Ecran 4">
+                            <figcaption>2002 - Genre : Fantastique</figcaption>
                         </figure>
                     </div>
-                    <div id="ecran-5" class="carrousel_ecran">
+                    <div class="carrousel_ecran">
                         <figure>
-                            <img src="../public/img/articles/pacific_rim/carrousel/hellboy.webp" alt="image ecran 5">
-                            <figcaption>Ecran 5</figcaption>
+                            <img src="../public/img/articles/pacific_rim/carrousel/hellboy.webp" alt="Ecran 5">
+                            <figcaption>2004 - Genre : Fantastique</figcaption>
                         </figure>
                     </div>
-                    <div id="ecran-1" class="carrousel_ecran">
+                    <div class="carrousel_ecran">
                         <figure>
-                            <img src="../public/img/articles/pacific_rim/carrousel/le_labyrinthe_de_pan.webp" alt="image ecran 1">
-                            <figcaption>Ecran 1</figcaption>
+                            <img src="../public/img/articles/pacific_rim/carrousel/le_labyrinthe_de_pan.webp" alt="Ecran 6">
+                            <figcaption>2006 - Genre : Dark Fantasy</figcaption>
                         </figure>
                     </div>
-                    <div id="ecran-2" class="carrousel_ecran">
+                    <div class="carrousel_ecran">
                         <figure>
-                            <img src="../public/img/articles/pacific_rim/carrousel/hellboy_deux.webp" alt="image ecran 2">
-                            <figcaption>Ecran 2</figcaption>
+                            <img src="../public/img/articles/pacific_rim/carrousel/hellboy_deux.webp" alt="Ecran 7">
+                            <figcaption>2008 - Genre : Fantastique</figcaption>
                         </figure>
                     </div>
-                    <div id="ecran-3" class="carrousel_ecran">
+                    <div class="carrousel_ecran">
                         <figure>
-                            <img src="../public/img/articles/pacific_rim/carrousel/crimson_peak.webp" alt="image ecran 3">
-                            <figcaption>Ecran 3</figcaption>
+                            <img src="../public/img/articles/pacific_rim/carrousel/crimson_peak.webp" alt="Ecran 8">
+                            <figcaption>2015 - Genre : Horreur</figcaption>
                         </figure>
                     </div>
-                    <div id="ecran-4" class="carrousel_ecran">
+                    <div class="carrousel_ecran">
                         <figure>
-                            <img src="../public/img/articles/pacific_rim/carrousel/la_forme_de_leau.webp" alt="image ecran 4">
-                            <figcaption>Ecran 4</figcaption>
+                            <img src="../public/img/articles/pacific_rim/carrousel/la_forme_de_leau.webp" alt="Ecran 9">
+                            <figcaption>2017 - Genre : Fantastique</figcaption>
                         </figure>
                     </div>
-                    <div id="ecran-5" class="carrousel_ecran">
+                    <div class="carrousel_ecran">
                         <figure>
-                            <img src="../public/img/articles/pacific_rim/carrousel/nightmare_alley.webp" alt="image ecran 5">
-                            <figcaption>Ecran 5</figcaption>
+                            <img src="../public/img/articles/pacific_rim/carrousel/nightmare_alley.webp" alt="Ecran 10">
+                            <figcaption>2021 - Genre : Thriller, Drame</figcaption>
                         </figure>
                     </div>
                 </div>
