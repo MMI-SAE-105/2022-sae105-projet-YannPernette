@@ -24,9 +24,18 @@ h2 {
 
 .extrait::before {
     display: block;
-    height: 0;
+    height: 30px;
     content: "“";
-    /* margin-left: -.55em; */
+    margin-left: -8px;
+    font: 400%/1 Georgia, serif;
+    color: #999;
+}
+
+.extrait_fin::after {
+    display: block;
+    height: -20px;
+    content: "”";
+    margin-left: 85px;
     font: 400%/1 Georgia, serif;
     color: #999;
 }
