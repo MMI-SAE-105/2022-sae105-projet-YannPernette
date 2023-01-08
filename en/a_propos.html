@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuous Evolution</title>
+    <link rel="shortcut icon" href="../public/icon/adn_logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <!-- Importation x-collapse -->
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <!-- Importation Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html"><img class="header_logo" src="../public/img/header/logo.svg" alt="Logo Continuous Evolution"></a>
+
+        <button 
+            class="menubtn"
+            @click="menuIsOpen = !menuIsOpen">
+            <span class="menubtn_bar"></span>
+        </button>
+
+        <nav class="menu" @click="menuIsOpen =! menuIsOpen" :class="{'actif' : menuIsOpen == true}">           
+            <a href="index.html"><h3 class="menu_title">Homepage</h3></a>
+            <div class="menu_lineA"></div>
+            <h3 class="menu_titlecolor">Articles</h3>
+            <ul>
+                <li><a class="menu_linkarticle" href="alamogordo.html"><img class="menu_icon" src="../public/icon/menu/lieu.svg" alt="icône lieu">White Sands Missile Range</a></li>
+                <li><a class="menu_linkarticle" href="evolution.html"><img class="menu_icon" src="../public/icon/menu/livre.svg" alt="icône lieu">Evolution</a></li>
+                <li><a class="menu_linkarticle" href="pacific_rim.html"><img class="menu_icon" src="../public/icon/menu/film.svg" alt="icône lieu">Pacific Rim</a></li>
+                <li><a class="menu_linkarticle" href="infinite_power.html"><img class="menu_icon" src="../public/icon/menu/musique.svg" alt="icône lieu">Infinite Power</a></li>
+                <li><a class="menu_linkarticle" href="changement_climatique.html"><img class="menu_icon" src="../public/icon/menu/crainte.svg" alt="icône lieu">Climat Change</a></li>
+                <li><a class="menu_linkarticle" href="projet_neom.html"><img class="menu_icon" src="../public/icon/menu/espoir.svg" alt="icône lieu">Project Neom</a></li>
+            </ul>
+            <div class="menu_lineB"></div>
+            <h3 class="menu_titlecolor">Informations</h3>
+            <ul>
+                <li><a class="menu_linkarticle" href="contact.html"><img class="menu_icon" src="../public/icon/menu/send.svg" alt="icône contact">Contact</a></li>
+                <li><a class="menu_linkarticle" href="a_propos.html"><img class="menu_icon" src="../public/icon/menu/user.svg" alt="icône à propos">About</a></li>
+                <li><a class="menu_linkarticle" href="glossaire.html"><img class="menu_icon" src="../public/icon/menu/tag.svg" alt="icône glossaire">Glossary</a></li>
+            </ul>
+            <ul class="menu_social">
+                <li><a href="facebook.com"><img src="../public/icon/facebook.svg" alt="icône Facebook"></a></li>
+                <li><a href="instagram.com"><img src="../public/icon/instagram.svg" alt="icône Instagram"></a></li>
+                <li><a href="twitter.com"><img src="../public/icon/twitter.svg" alt="icône Twitter"></a></li>
+            </ul>
+        </nav>
+
+        <div x-data="{langueIsOpen: false}">
+            <button
+                class="languebtn"
+                @click="langueIsOpen =! langueIsOpen">
+                <img class="langue_img" src="../public/img/header/royaume_uni.webp" alt="Anglais">
+                <span class="triangle"></span>
+            </button>
+
+            <nav class="langue" x-show="langueIsOpen" x-collapse>
+                <h3 class="langue_title">Langues</h3>
+                <ul>
+                    <li><a class="langue_link langue_fr" href="../fr/index.html"><img class="langue_pays" src="../public/img/header/france.webp" alt="Français">Français</a></li>
+                    <li><a class="langue_link" href="index.html"><img class="langue_pays" src="../public/img/header/royaume_uni.webp" alt="English">English</a></li>
+                </ul>
+                <div class="langue_line"></div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Understand everything about this project</h2>
+        <img class="header_adn" src="../public/img/elements/adn_transi_a.svg" alt="transition ADN">
+
+        <h1>About me</h1>
+
+        <section>   
+            <h3>Who am I ?</h3>
+            <figure>
+                <img class="photo_moi" src="../public/img/elements/photo_yann.jpg" alt="Photo de moi">
+                <figcaption class="caption_moi">Yann Pernette</figcaption>
+            </figure>
+            <p class="infos_moi">- 18 years old</p>
+            <p class="infos_moi">- Student in first year of the BUT Métiers du Multimédia et de l’Internet “MMI” in Montbéliard</p>
+            <p class="infos_moi">- Owner of the General Bachelor’s degree</p>
+        </section>
+
+        <section>
+            <h3>Project goal</h3>
+            <p>The goal of this project was to present to my future self (10 years later) six elements. These elements constitute the articles of the website. So I will always have a memory of 2022. I could look at the site in the future and remember that time.</p>
+        </section>
+
+        <section>
+            <h3>My approach</h3>
+            <p>I wanted to show the evolution of the world through this project. Those who visit this website must understand that the world is constantly changing. The articles are presented in chronological order on the homepage to facilitate the understanding of this evolution.</p>
+        </section>
+
+        <h1>Others projects</h1>
+
+        <p>Here are the other websites made by my classmates of the B2 group in the MMI Montbéliard.</p>
+
+        <div class="container">
+
+            <article class="projet">
+                <a href="https://vers-un-monde-utopique.albanluc.fr">
+                    <h4 class="projet_titre">Vers un monde utopique ?</h4>
+                    <p class="projet_nom">Alban LUC</p>
+                </a>
+            </article>
+
+            <article class="projet">
+                <a href="">
+                    <h4 class="projet_titre">À quoi ressemblera le monde ?</h4>
+                    <p class="projet_nom">Arilès MESSAOUDI</p>
+                </a>
+            </article>
+
+            <article class="projet">
+                <a href="https://wiwtb18.romane-miguel.fr">
+                    <h4 class="projet_titre">What it was to be eighteen</h4>
+                    <p class="projet_nom">Romane MIGUEL</p>
+                </a>
+            </article>
+
+            <article class="projet">
+                <a href="">
+                    <h4 class="projet_titre">TikTak</h4>
+                    <p class="projet_nom">Camilia MOKDAD</p>
+                </a>
+            </article>
+
+            <article class="projet">
+                <a href="https://denunciationofthecurrentworld.mouadeb.fr">
+                    <h4 class="projet_titre">Denonciation of the current world</h4>
+                    <p class="projet_nom">Sofiane MOUADEB</p>
+                </a>
+            </article>
+
+            <article class="projet">
+                <a href="https://what-have-we-become.evanmoulin.fr">
+                    <h4 class="projet_titre">What have we become ?</h4>
+                    <p class="projet_nom">Evan MOULIN</p>
+                </a>
+            </article>
+
+            <article class="projet">
+                <a href="https://mind-interest.marionmura.fr">
+                    <h4 class="projet_titre">Mind-Interest</h4>
+                    <p class="projet_nom">Marion MURA</p>
+                </a>
+            </article>
+
+            <article class="projet">
+                <a href="">
+                    <h4 class="projet_titre">Time Loop</h4>
+                    <p class="projet_nom">Marie-Claire NAZE</p>
+                </a>
+            </article>
+
+            <article class="projet">
+                <a href="https://kairos.marwa-nezzar.fr/fr">
+                    <h4 class="projet_titre">Kairos</h4>
+                    <p class="projet_nom">Marwa NEZZAR</p>
+                </a>
+            </article>
+
+            <article class="projet">
+                <a href="">
+                    <h4 class="projet_titre">Korean Notes</h4>
+                    <p class="projet_nom">Léopold OHNIMUS</p>
+                </a>
+            </article>
+
+            <article class="projet">
+                <a href="">
+                    <h4 class="projet_titre">FF all time</h4>
+                    <p class="projet_nom">Yassir OUADGHIRI</p>
+                </a>
+            </article>
+
+            <article class="projet">
+                <a href="https://last-time.thomaspoupon.fr">
+                    <h4 class="projet_titre">Last Time</h4>
+                    <p class="projet_nom">Thomas POUPON</p>
+                </a>
+            </article>
+
+        </div>
+
+        <div class="footer_retour"><a href="#"><img src="../public/icon/arrow_circle.svg" alt="Icône de retour en haut de page"></a></div>
+    </main>
+
+    <footer class="footer">
+        <img class="footer_adn" src="../public/img/elements/adn_transi_b.svg" alt="transition ADN">
+            
+        <h4 class="footer_titre">Legal notices</h4>
+        <nav>
+            <a class="footer_lien" href="credits.html">Credits</a>
+        </nav>
+        <p class="footer_info">"project carried out for a pedagogical exercise at the department <a class="footer_lienmmi" href="http://mmimontbeliard.com">MMi of Montbéliard</a>"</p>
+
+        <h4 class="footer_titre">Follow us</h4>
+        <div class=""></div>
+        <div class="footer_suivre">
+            <nav>
+                <ul class="footer_res">
+                    <li><a href="https://www.facebook.com"><img src="../public/icon/facebook.svg" alt="logo facebook"></a></li>
+                    <li><a href="https://www.instagram.com"><img src="../public/icon/instagram.svg" alt="logo instagram"></a></li>
+                    <li><a href="https://www.twitter.com"><img src="../public/icon/twitter.svg" alt="logo twitter"></a></li>
+                </ul>
+            </nav>
+            <a href="http://mmimontbeliard.com"><img class="footer_mmi" src="../public/icon/mmi_logo.svg" alt="logo MMI Montbéliard"></a>
+        </div>
+
+        <address><a class="footer_adress" href="mailto:yann.pernette@edu.univ-fcomte.fr">By Yann PERNETTE MMI1 B2</a></address>
+    </footer>
+
+</body>
+
+</html>
