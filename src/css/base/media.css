@@ -21,3 +21,12 @@ h2 {
     box-shadow: var(--ombres-images);
     margin-top: 15px;
 }
+
+.extrait::before {
+    display: block;
+    height: 0;
+    content: "“";
+    /* margin-left: -.55em; */
+    font: 400%/1 Georgia, serif;
+    color: #999;
+}
