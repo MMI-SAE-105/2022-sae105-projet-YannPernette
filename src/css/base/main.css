@@ -41,7 +41,7 @@ p {
     color: black;
     font-size: var(--texte-basique);
     font-family: var(--arimo);
-    padding: 5px;
+    padding: 10px;
 }
 
 a {
