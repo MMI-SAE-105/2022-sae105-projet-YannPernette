@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuous Evolution</title>
+    <link rel="shortcut icon" href="../public/icon/adn_logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link href="https://unpkg.com/cloudinary-video-player@1.9.4/dist/cld-video-player.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/cloudinary-video-player@1.9.4/dist/cld-video-player.min.js" type="text/javascript"></script>
+    <!-- Importation x-collapse -->
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <!-- Importation Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html" id="haut-de-page"><img class="header_logo" src="../public/img/header/logo.svg" alt="Logo Continuous Evolution"></a>
+
+        <button 
+            class="menubtn"
+            @click="menuIsOpen = !menuIsOpen">
+            <span class="menubtn_bar"></span>
+        </button>
+
+        <nav class="menu" @click="menuIsOpen =! menuIsOpen" :class="{'actif' : menuIsOpen == true}">           
+            <a href="index.html"><h3 class="menu_title">Accueil</h3></a>
+            <div class="menu_lineA"></div>
+            <h3 class="menu_titlecolor">Articles</h3>
+            <ul>
+                <li><a class="menu_linkarticle" href="alamogordo.html"><img class="menu_icon" src="../public/icon/menu/lieu.svg" alt="icône lieu">Champ de tir d'Alamogordo</a></li>
+                <li><a class="menu_linkarticle" href="evolution.html"><img class="menu_icon" src="../public/icon/menu/livre.svg" alt="icône lieu">Evolution</a></li>
+                <li><a class="menu_linkarticle" href="pacific_rim.html"><img class="menu_icon" src="../public/icon/menu/film.svg" alt="icône lieu">Pacific Rim</a></li>
+                <li><a class="menu_linkarticle" href="infinite_power.html"><img class="menu_icon" src="../public/icon/menu/musique.svg" alt="icône lieu">Infinite Power</a></li>
+                <li><a class="menu_linkarticle" href="changement_climatique.html"><img class="menu_icon" src="../public/icon/menu/crainte.svg" alt="icône lieu">Changement Climatique</a></li>
+                <li><a class="menu_linkarticle" href="projet_neom.html"><img class="menu_icon" src="../public/icon/menu/espoir.svg" alt="icône lieu">Projet Neom</a></li>
+            </ul>
+            <div class="menu_lineB"></div>
+            <h3 class="menu_titlecolor">Informations</h3>
+            <ul>
+                <li><a class="menu_linkarticle" href="contact.html"><img class="menu_icon" src="../public/icon/menu/send.svg" alt="icône contact">Contact</a></li>
+                <li><a class="menu_linkarticle" href="a_propos.html"><img class="menu_icon" src="../public/icon/menu/user.svg" alt="icône à propos">À Propos</a></li>
+                <li><a class="menu_linkarticle" href="glossaire.html"><img class="menu_icon" src="../public/icon/menu/tag.svg" alt="icône glossaire">Glossaire</a></li>
+            </ul>
+            <ul class="menu_social">
+                <li><a href="facebook.com"><img src="../public/icon/facebook.svg" alt="icône Facebook"></a></li>
+                <li><a href="instagram.com"><img src="../public/icon/instagram.svg" alt="icône Instagram"></a></li>
+                <li><a href="twitter.com"><img src="../public/icon/twitter.svg" alt="icône Twitter"></a></li>
+            </ul>
+        </nav>
+
+        <div x-data="{langueIsOpen: false}">
+            <button
+                class="languebtn"
+                @click="langueIsOpen =! langueIsOpen">
+                <img class="langue_img" src="../public/img/header/france.webp" alt="Français">
+                <span class="triangle"></span>
+            </button>
+
+            <nav class="langue" x-show="langueIsOpen" x-collapse>
+                <h3 class="langue_title">Langues</h3>
+                <ul>
+                    <li><a class="langue_link langue_fr" href="accueil.html"><img class="langue_pays" src="../public/img/header/france.webp" alt="Français">Français</a></li>
+                    <li><a class="langue_link" href="accueil.html"><img class="langue_pays" src="../public/img/header/royaume_uni.webp" alt="English">English</a></li>
+                </ul>
+                <div class="langue_line"></div>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <h2>When the world is getting hit by an alien invasion</h2>
+
+        <img class="header_adn" src="../public/img/elements/adn_transi_a.svg" alt="transition ADN">
+        <h1>Pacific Rim</h1>
+
+        <figure>
+            <img class="img_article" src="../public/img/articles/pacific_rim/pacific_rim_main.webp" alt="Jaeger de Pacific Rim">
+            <figcaption>Jaeger from Pacific Rim</figcaption>
+        </figure>
+
+        <section>
+            <h3>Synopsis of the film</h3>
+            <p>Pacific Rim is an American blockbuster released July the 17th 2013 in all the theaters of France. It’s an apocalyptic film where humans face an alien threat: the kaijus. The kaijus are huge monsters (comparable to Godzilla) coming out of an interdimensional breach situated at the bottom of the Pacific Ocean. They terrorize humans,  destroying everything in their path and killing millions.</p>
+            <p>To counter them, humans have all united themselves and forgotten about their wars and conflicts. They created huge robots that could fight against the kaijus: the Jaegers (inspired by the German word Jäger meaning hunter).</p>
+        </section>
+
+        <div class="blockquote"><blockquote>“The world could change drastically at any time as Pacific Rim shows.”</blockquote></div>
+
+        <section>
+            <h3>Issues and Rewards</h3>
+            <p>The Jaegers are controlled by 2 pilots connected by the “deviation”. Deviation is a technique to synchronize 2 humans through a neural bridge. At the beginning, the Jaegers won many fights but very quickly the kaijus evolved. They become more dangerous and the Jaegers are outdated. It is therefore up to Raleigh Becket and Mako Mori to try a final assault inside the very last remaining Jaeger to destroy once and for all the breach from which the kaijus emerge.</p>
+            <p>Pacific Rim is directed by Guillermo del Toro and won the 2013 Best Visual and Special Effects Award. Pacific Rim is a “Mecha” film. Huge futuristic robots fight against gigantic monsters. Here, they fight against kaijus, so the film is a kaiju eiga.</p>
+        </section>
+
+        <video
+            width=375
+            height=200
+            id="bande_annonce_deux"
+            controls
+            muted
+            class="cld-video-player cld-video-player-skin-dark">
+        </video>
+
+        <figure>
+            <img class="img_article" src="../public/img/articles/pacific_rim/pacific_rim_kaiju.webp" alt="Kaiju de Pacific Rim">
+            <figcaption>Kaiju from Pacific Rim</figcaption>
+        </figure>
+
+        <section>
+            <h3>Parallel with the reality</h3>
+            <p>The world could change drastically at any time as Pacific Rim shows. Although the film is totally unrealistic, since 2020 the world has already experienced a global pandemic (Covid 19).</p>
+            <p>It would not be aliens who could upset our world but pandemics or other diseases or even nuclear conflicts.</p>
+        </section>
+
+        <figure>
+            <img class="img_article" src="../public/img/articles/pacific_rim/pacific_rim_torro.webp" alt="Guillermo del Torro">
+            <figcaption>Guillermo del Torro</figcaption>
+        </figure>
+
+        <h1>Filmography of Guillermo del Torro</h1>
+
+        <div class="carrousel" x-data="{image_active: '#ecran-1'}">
+                <button @click="const p = $refs.parent ; p.scrollLeft -= p.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant">&lt</button><button @click="const p = $refs.parent ; p.scrollLeft += p.clientWidth" class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">&gt</button>
+                <div class="carrousel_parent-ecrans" x-ref="parent" 
+                        @scroll.debounce.250ms.passive="
+                hrefCourant = '#'+
+                                  [...$refs.parent.children]
+                                   .find(e=>e.getBoundingClientRect().x>=0)
+                                   .id
+                                                     "
+                >
+                    <div class="carrousel_ecran">
+                        <figure>
+                            <img src="../public/img/articles/pacific_rim/carrousel/cronos.webp" alt="Ecran 1">
+                            <figcaption>1993 - Type: Horror</figcaption>
+                        </figure>
+                    </div>
+                    <div class="carrousel_ecran">
+                        <figure>
+                            <img src="../public/img/articles/pacific_rim/carrousel/mimic.webp" alt="Ecran 2">
+                            <figcaption>1997 - Type: Horror</figcaption>
+                        </figure>
+                    </div>
+                    <div class="carrousel_ecran">
+                        <figure>
+                            <img src="../public/img/articles/pacific_rim/carrousel/lechine_du_diable.webp" alt="Ecran 3">
+                            <figcaption>2001 - Type: Horror, Tragedy</figcaption>
+                        </figure>
+                    </div>
+                    <div class="carrousel_ecran">
+                        <figure>
+                            <img src="../public/img/articles/pacific_rim/carrousel/blade_deux.webp" alt="Ecran 4">
+                            <figcaption>2002 - Type: Fantasy</figcaption>
+                        </figure>
+                    </div>
+                    <div class="carrousel_ecran">
+                        <figure>
+                            <img src="../public/img/articles/pacific_rim/carrousel/hellboy.webp" alt="Ecran 5">
+                            <figcaption>2004 - Type: Fantasy</figcaption>
+                        </figure>
+                    </div>
+                    <div class="carrousel_ecran">
+                        <figure>
+                            <img src="../public/img/articles/pacific_rim/carrousel/le_labyrinthe_de_pan.webp" alt="Ecran 6">
+                            <figcaption>2006 - Type: Dark Fantasy</figcaption>
+                        </figure>
+                    </div>
+                    <div class="carrousel_ecran">
+                        <figure>
+                            <img src="../public/img/articles/pacific_rim/carrousel/hellboy_deux.webp" alt="Ecran 7">
+                            <figcaption>2008 - Type: Fantasy</figcaption>
+                        </figure>
+                    </div>
+                    <div class="carrousel_ecran">
+                        <figure>
+                            <img src="../public/img/articles/pacific_rim/carrousel/crimson_peak.webp" alt="Ecran 8">
+                            <figcaption>2015 - Type: Horror</figcaption>
+                        </figure>
+                    </div>
+                    <div class="carrousel_ecran">
+                        <figure>
+                            <img src="../public/img/articles/pacific_rim/carrousel/la_forme_de_leau.webp" alt="Ecran 9">
+                            <figcaption>2017 - Type: Fantasy</figcaption>
+                        </figure>
+                    </div>
+                    <div class="carrousel_ecran">
+                        <figure>
+                            <img src="../public/img/articles/pacific_rim/carrousel/nightmare_alley.webp" alt="Ecran 10">
+                            <figcaption>2021 - Type: Thriller, Tragedy</figcaption>
+                        </figure>
+                    </div>
+                </div>
+        </div>
+
+        <div class="footer_retour"><a href="#"><img src="../public/icon/arrow_circle.svg" alt="Icône de retour en haut de page"></a></div>
+    </main>
+
+    <footer class="footer">
+        <img class="footer_adn" src="../public/img/elements/adn_transi_b.svg" alt="transition ADN">
+            
+        <h4 class="footer_titre">Legal notices</h4>
+        <nav>
+            <a class="footer_lien" href="credits.html">Credits</a>
+        </nav>
+        <p class="footer_info">"project carried out for a pedagogical exercise at the department <a class="footer_lienmmi" href="http://mmimontbeliard.com">MMi of Montbéliard</a>"</p>
+
+        <h4 class="footer_titre">Follow us</h4>
+        <div class=""></div>
+        <div class="footer_suivre">
+            <nav>
+                <ul class="footer_res">
+                    <li><a href="https://www.facebook.com"><img src="../public/icon/facebook.svg" alt="logo facebook"></a></li>
+                    <li><a href="https://www.instagram.com"><img src="../public/icon/instagram.svg" alt="logo instagram"></a></li>
+                    <li><a href="https://www.twitter.com"><img src="../public/icon/twitter.svg" alt="logo twitter"></a></li>
+                </ul>
+            </nav>
+            <a href="http://mmimontbeliard.com"><img class="footer_mmi" src="../public/icon/mmi_logo.svg" alt="logo MMI Montbéliard"></a>
+        </div>
+
+        <address><a class="footer_adress" href="mailto:yann.pernette@edu.univ-fcomte.fr">By Yann PERNETTE MMI1 B2</a></address>
+    </footer>
+
+    <script>
+        var cld = cloudinary.videoPlayer('bande_annonce_deux', { 
+        cloud_name: 'drlzu9fow', //remplacer par votre id cloudinary 
+        sourceTypes: ['hls','dash','webm/vp9','mp4/h265','mp4']});
+        cld.source('Pacific_Rim_Bande_Annonce_Officielle__VF_mpdzyz.mp4'); //à remplacer après avoir uploader une vidéo
+    </script>
+
+</body>
+
+</html>
