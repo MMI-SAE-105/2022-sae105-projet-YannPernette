@@ -39,3 +39,11 @@ h2 {
     font: 400%/1 Georgia, serif;
     color: #999;
 }
+
+.photo_moi {
+    margin-top: 10px;
+    width: 70%;
+    margin-left: 16%;
+    border-radius: 100%;
+    box-shadow: var(--ombres-images);
+}
