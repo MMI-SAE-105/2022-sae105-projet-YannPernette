@@ -22,11 +22,11 @@
   font-family: var(--maven-pro);
   text-transform: uppercase;
   text-decoration: none;
-
 }
 
 .menu_title {
   margin-top: 70px;
+  color: var(--blanc);
 }
 
 .menu_titlecolor {
