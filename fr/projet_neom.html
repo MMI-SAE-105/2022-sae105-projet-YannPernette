@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen: false}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +7,72 @@
     <title>Continuous Evolution</title>
     <link rel="shortcut icon" href="../public/icon/adn_logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="../src/css/style.css">
+    <!-- Importation x-collapse -->
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <!-- Importation Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body>
     
-    <header>
-        <a href="../index.html" id="haut-de-page"><img src="../public/img/header/Logo.webp" alt="Logo Continuous Evolution"></a>
+    <header class="header">
+        <a href="index.html"><img class="header_logo" src="../public/img/header/logo.svg" alt="Logo Continuous Evolution"></a>
+
+        <button 
+            class="menubtn"
+            @click="menuIsOpen = !menuIsOpen">
+            <span class="menubtn_bar"></span>
+        </button>
+
+        <nav class="menu" @click="menuIsOpen =! menuIsOpen" :class="{'actif' : menuIsOpen == true}">           
+            <h3 class="menu_title">Accueil</h3>
+            <div class="menu_lineA"></div>
+            <h3 class="menu_titlecolor">Articles</h3>
+            <ul>
+                <li><a class="menu_linkarticle" href="alamogordo.html"><img class="menu_icon" src="../public/icon/menu/lieu.svg" alt="icône lieu">Champ de tir d'Alamogordo</a></li>
+                <li><a class="menu_linkarticle" href="evolution.html"><img class="menu_icon" src="../public/icon/menu/livre.svg" alt="icône lieu">Evolution</a></li>
+                <li><a class="menu_linkarticle" href="pacific_rim.html"><img class="menu_icon" src="../public/icon/menu/film.svg" alt="icône lieu">Pacific Rim</a></li>
+                <li><a class="menu_linkarticle" href="infinite_power.html"><img class="menu_icon" src="../public/icon/menu/musique.svg" alt="icône lieu">Infinite Power</a></li>
+                <li><a class="menu_linkarticle" href="changement_climatique.html"><img class="menu_icon" src="../public/icon/menu/crainte.svg" alt="icône lieu">Changement Climatique</a></li>
+                <li><a class="menu_linkarticle" href="projet_neom.html"><img class="menu_icon" src="../public/icon/menu/espoir.svg" alt="icône lieu">Projet Neom</a></li>
+            </ul>
+            <div class="menu_lineB"></div>
+            <h3 class="menu_titlecolor">Informations</h3>
+            <ul>
+                <li><a class="menu_linkarticle" href="contact.html"><img class="menu_icon" src="../public/icon/menu/send.svg" alt="icône contact">Contact</a></li>
+                <li><a class="menu_linkarticle" href="a_propos.html"><img class="menu_icon" src="../public/icon/menu/user.svg" alt="icône à propos">À Propos</a></li>
+                <li><a class="menu_linkarticle" href="glossaire.html"><img class="menu_icon" src="../public/icon/menu/tag.svg" alt="icône glossaire">Glossaire</a></li>
+            </ul>
+            <ul class="menu_social">
+                <li><a href="facebook.com"><img src="../public/icon/facebook.svg" alt="icône Facebook"></a></li>
+                <li><a href="instagram.com"><img src="../public/icon/instagram.svg" alt="icône Instagram"></a></li>
+                <li><a href="twitter.com"><img src="../public/icon/twitter.svg" alt="icône Twitter"></a></li>
+            </ul>
+        </nav>
+
+        <div x-data="{langueIsOpen: false}">
+            <button
+                class="languebtn"
+                @click="langueIsOpen =! langueIsOpen">
+                <img class="langue_img" src="../public/img/header/france.webp" alt="Français">
+                <span class="triangle"></span>
+            </button>
+
+            <nav class="langue" x-show="langueIsOpen" x-collapse>
+                <h3 class="langue_title">Langues</h3>
+                <ul>
+                    <li><a class="langue_link langue_fr" href="accueil.html"><img class="langue_pays" src="../public/img/header/france.webp" alt="Français">Français</a></li>
+                    <li><a class="langue_link" href="accueil.html"><img class="langue_pays" src="../public/img/header/royaume_uni.webp" alt="English">English</a></li>
+                </ul>
+                <div class="langue_line"></div>
+            </nav>
+        </div>
     </header>
     
     <main>
 
         <h2>La ville futuriste au milieu du désert saoudien</h2>
-
-        <img src="../public/img/elements/adn transi.svg" alt="transition ADN">
+        <img class="header_adn" src="../public/img/elements/adn_transi_a.svg" alt="transition ADN">
 
         <h1>Projet Neom</h1>
 
@@ -50,37 +103,33 @@
             <p>Malgré tout, le projet Neom est d’une ampleur sans précédent et il subsiste donc de nombreuses questions. On peut se demander si les proportions sont réellement envisageables pour notre époque ainsi que toutes les innovations technologiques promises. Cependant si ce projet voit le jour, je pense personnellement qu’il va changer le monde. Ce serait une réponse efficace à la surpopulation. C’est ce genre de concept qui doit être développé. Pour réfléchir à de nouvelles solutions, l’être humain va devoir se tourner vers des solutions futuristes. Pour évoluer, il faut forcément se tourner vers l’avenir.</p>
         </section>
 
-        <img src="../public/img/elements/adn transi.svg" alt="transition ADN">
+        <div class="footer_retour"><a href="#"><img src="../public/icon/arrow_circle.svg" alt="Icône de retour en haut de page"></a></div>
 
     </main>
 
-    <footer>
-        <a href="#haut-de-page">Haut de page</a>
-        <ul> <nav> Articles
-                <li><a href=alamogordo.html>Champ tir d'Alamogordo</a></li>
-                <li><a href=evolution.html>Evolution</a></li>
-                <li><a href=pacific_rim.html>Pacific Rim</a></li>
-                <li><a href=infinite_power.html>Infinite Power</a></li>
-                <li><a href=changement_climatique.html>Changement climatique</a></li>
-                <li><a href=projet_neom.html>Projet Neom</a></li>
+    <footer class="footer">
+        <img class="footer_adn" src="../public/img/elements/adn_transi_b.svg" alt="transition ADN">
+            
+        <h4 class="footer_titre">Mentions légales</h4>
+        <nav>
+            <a class="footer_lien" href="credits.html">Crédits</a>
+        </nav>
+        <p class="footer_info">"projet réalisé dans le cadre d’un exercice pédagogique au département <a class="footer_lienmmi" href="http://mmimontbeliard.com">MMi de Montbéliard</a>"</p>
+
+        <h4 class="footer_titre">Suivez-nous</h4>
+        <div class=""></div>
+        <div class="footer_suivre">
+            <nav>
+                <ul class="footer_res">
+                    <li><a href="https://www.facebook.com"><img src="../public/icon/facebook.svg" alt="logo facebook"></a></li>
+                    <li><a href="https://www.instagram.com"><img src="../public/icon/instagram.svg" alt="logo instagram"></a></li>
+                    <li><a href="https://www.twitter.com"><img src="../public/icon/twitter.svg" alt="logo twitter"></a></li>
+                </ul>
             </nav>
-        </ul>
-        <ul> <nav> Informations
-                <li><a href=../informations/contact.html>Contact</a></li>
-                <li><a href=../informations/a_propos.html>À propos</a></li>
-                <li><a href=../informations/glossaire.html>Glossaire</a></li>
-                <li><a href=../informations/credits.html>Crédits</a></li>
-            </nav>
-        </ul>
-        <ul> <nav>
-                <li><a href="https://www.facebook.com"><img src="../public/icon/facebook.svg" alt="logo facebook"></a></li>
-                <li><a href="https://www.instagram.com"><img src="../public/icon/instagram.svg" alt="logo instagram"></a></li>
-                <li><a href="https://www.twitter.com"><img src="../public/icon/twitter.svg" alt="logo twitter"></a></li>
-            </nav>
-        </ul>
-        <a href="http://mmimontbeliard.com"><img src="../public/icon/mmi_logo.svg" alt="logo MMI Montbéliard"></a>
-        <p>“projet réalisé dans le cadre d’un exercice pédagogique au département <a href="http://mmimontbeliard.com">MMi de Montbéliard</a>“ </p>
-        <address><a href="mailto:yann.pernette@edu.univ-fcomte.fr">By Yann PERNETTE MMI1 B2</a></address>
+            <a href="http://mmimontbeliard.com"><img class="footer_mmi" src="../public/icon/mmi_logo.svg" alt="logo MMI Montbéliard"></a>
+        </div>
+
+        <address><a class="footer_adress" href="mailto:yann.pernette@edu.univ-fcomte.fr">By Yann PERNETTE MMI1 B2</a></address>
     </footer>
 
 </body>
