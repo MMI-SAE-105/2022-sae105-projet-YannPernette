@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuous Evolution</title>
+    <link rel="shortcut icon" href="../public/icon/adn_logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <!-- Importation x-collapse -->
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <!-- Importation Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html" id="haut-de-page"><img class="header_logo" src="../public/img/header/logo.svg" alt="Logo Continuous Evolution"></a>
+
+        <button 
+            class="menubtn"
+            @click="menuIsOpen = !menuIsOpen">
+            <span class="menubtn_bar"></span>
+        </button>
+
+        <nav class="menu" @click="menuIsOpen =! menuIsOpen" :class="{'actif' : menuIsOpen == true}">           
+            <a href="index.html"><h3 class="menu_title">Accueil</h3></a>
+            <div class="menu_lineA"></div>
+            <h3 class="menu_titlecolor">Articles</h3>
+            <ul>
+                <li><a class="menu_linkarticle" href="alamogordo.html"><img class="menu_icon" src="../public/icon/menu/lieu.svg" alt="icône lieu">Champ de tir d'Alamogordo</a></li>
+                <li><a class="menu_linkarticle" href="evolution.html"><img class="menu_icon" src="../public/icon/menu/livre.svg" alt="icône lieu">Evolution</a></li>
+                <li><a class="menu_linkarticle" href="pacific_rim.html"><img class="menu_icon" src="../public/icon/menu/film.svg" alt="icône lieu">Pacific Rim</a></li>
+                <li><a class="menu_linkarticle" href="infinite_power.html"><img class="menu_icon" src="../public/icon/menu/musique.svg" alt="icône lieu">Infinite Power</a></li>
+                <li><a class="menu_linkarticle" href="changement_climatique.html"><img class="menu_icon" src="../public/icon/menu/crainte.svg" alt="icône lieu">Changement Climatique</a></li>
+                <li><a class="menu_linkarticle" href="projet_neom.html"><img class="menu_icon" src="../public/icon/menu/espoir.svg" alt="icône lieu">Projet Neom</a></li>
+            </ul>
+            <div class="menu_lineB"></div>
+            <h3 class="menu_titlecolor">Informations</h3>
+            <ul>
+                <li><a class="menu_linkarticle" href="contact.html"><img class="menu_icon" src="../public/icon/menu/send.svg" alt="icône contact">Contact</a></li>
+                <li><a class="menu_linkarticle" href="a_propos.html"><img class="menu_icon" src="../public/icon/menu/user.svg" alt="icône à propos">À Propos</a></li>
+                <li><a class="menu_linkarticle" href="glossaire.html"><img class="menu_icon" src="../public/icon/menu/tag.svg" alt="icône glossaire">Glossaire</a></li>
+            </ul>
+            <ul class="menu_social">
+                <li><a href="facebook.com"><img src="../public/icon/facebook.svg" alt="icône Facebook"></a></li>
+                <li><a href="instagram.com"><img src="../public/icon/instagram.svg" alt="icône Instagram"></a></li>
+                <li><a href="twitter.com"><img src="../public/icon/twitter.svg" alt="icône Twitter"></a></li>
+            </ul>
+        </nav>
+
+        <div x-data="{langueIsOpen: false}">
+            <button
+                class="languebtn"
+                @click="langueIsOpen =! langueIsOpen">
+                <img class="langue_img" src="../public/img/header/france.webp" alt="Français">
+                <span class="triangle"></span>
+            </button>
+
+            <nav class="langue" x-show="langueIsOpen" x-collapse>
+                <h3 class="langue_title">Langues</h3>
+                <ul>
+                    <li><a class="langue_link langue_fr" href="accueil.html"><img class="langue_pays" src="../public/img/header/france.webp" alt="Français">Français</a></li>
+                    <li><a class="langue_link" href="accueil.html"><img class="langue_pays" src="../public/img/header/royaume_uni.webp" alt="English">English</a></li>
+                </ul>
+                <div class="langue_line"></div>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <h2>The futurist city in the middle of the saudi desert</h2>
+        <img class="header_adn" src="../public/img/elements/adn_transi_a.svg" alt="transition ADN">
+
+        <h1>Project Neom</h1>
+
+        <figure>
+            <img class="img_article" src="../public/img/articles/projet_neom/projet_neom_main.webp" alt="projection de l’extérieur de The Line">
+            <figcaption>The Line’s exterior projection</figcaption>
+        </figure>
+
+        <section>
+            <h3>Project's presentation</h3>
+            <p>Neom is the name of a futuristic city project on the Red Sea. It will consist of two buildings covered with mirrors of a height of 500 meters that give its name to the city: The Line. The Line will be 170 kilometers long and will have an area of approximately 26 000 square meters, 250 times Paris. Its mission is to become a central megapolis in the world by welcoming 9 million inhabitants by 2045.</p>
+            <p>It was Saudi Arabian Prince Mohammed Ben Salmane who initiated this project. He wants to create a utopian city automated and without cars. For this, places of activity and work will all be superimposed. The inhabitants will be able to satisfy all their daily needs in five minutes on foot.</p>
+        </section>
+
+        <div class="blockquote"><blockquote>“To think about new solutions, humans will have to start making futuristic solutions.”</blockquote></div>
+
+        <section>
+            <h3>The city of excess</h3>
+            <p>This project seems extremely innovative but has a colossal cost. The first phase will last until 2030 and will cost $319 billion according to Mohammed Ben Salmane. However, the Daily Mail newspaper estimates the project to be worth more than 1000 billion dollars, to which the cost of the second phase will have to be added.</p>
+            <p>Environmentally, The Line will be entirely powered by renewable energy. It is indeed ideally positioned to receive solar and wind energy.</p>
+        </section>
+
+        <figure>
+            <img class="img_article" src="../public/img/articles/projet_neom/projet_neom_int.webp" alt="projection de l’intérieur de The Line">
+            <figcaption>The Line’s interior projection</figcaption>
+        </figure>
+
+        <section>
+            <h3>Limitations and return to reality</h3>
+            <p>Despite all of that, the project Neom has a gigantic extent and there are still many questions. One may wonder whether the proportions are really conceivable for our time as well as all the technological innovations promised.</p>
+            <p>However, if this project is created, I personally think it will change the world. It would be an effective response to overcrowding. It is this kind of concept that must be developed. To think about new solutions, humans will have to start making futuristic solutions. To evolve, you have to look to the future.</p>
+        </section>
+
+        <div class="footer_retour"><a href="#"><img src="../public/icon/arrow_circle.svg" alt="Icône de retour en haut de page"></a></div>
+    </main>
+
+    <footer class="footer">
+        <img class="footer_adn" src="../public/img/elements/adn_transi_b.svg" alt="transition ADN">
+            
+        <h4 class="footer_titre">Legal notices</h4>
+        <nav>
+            <a class="footer_lien" href="credits.html">Credits</a>
+        </nav>
+        <p class="footer_info">"project carried out for a pedagogical exercise at the department <a class="footer_lienmmi" href="http://mmimontbeliard.com">MMi of Montbéliard</a>"</p>
+
+        <h4 class="footer_titre">Follow us</h4>
+        <div class=""></div>
+        <div class="footer_suivre">
+            <nav>
+                <ul class="footer_res">
+                    <li><a href="https://www.facebook.com"><img src="../public/icon/facebook.svg" alt="logo facebook"></a></li>
+                    <li><a href="https://www.instagram.com"><img src="../public/icon/instagram.svg" alt="logo instagram"></a></li>
+                    <li><a href="https://www.twitter.com"><img src="../public/icon/twitter.svg" alt="logo twitter"></a></li>
+                </ul>
+            </nav>
+            <a href="http://mmimontbeliard.com"><img class="footer_mmi" src="../public/icon/mmi_logo.svg" alt="logo MMI Montbéliard"></a>
+        </div>
+
+        <address><a class="footer_adress" href="mailto:yann.pernette@edu.univ-fcomte.fr">By Yann PERNETTE MMI1 B2</a></address>
+    </footer>
+
+</body>
+
+</html>
