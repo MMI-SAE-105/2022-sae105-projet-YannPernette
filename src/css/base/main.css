@@ -3,22 +3,23 @@
 } */
 
 h1 {
-    font-size: var(--titre-2);
+    font-size: var(--titre);
     font-family: var(--josefin-sans);
     text-transform: uppercase;
+    line-height: 2.5rem;
     color: var(--noir);
     text-align: center;
     /* border-radius: 25% 75% 0% 100% / 100% 0% 100% 0%;
     border: solid 5px black;
     background-color: var(--noir); */
     padding: 5px;
-    margin: 0 30px;
+    margin: 15px 30px 0 30px;
     text-shadow:0 4px 0 var(--nuance-dore), 0 -4px 0 var(--nuance-dore);
 }
 
 h2 {
     padding: 65px 5px 30px 5px;
-    font-size: var(--titre);
+    font-size: var(--titre-2);
     font-family: var(--josefin-sans);
     text-transform: uppercase;
     color: var(--blanc);
