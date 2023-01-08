@@ -50,6 +50,10 @@
   transform: initial;
 }
 
+/* body['menuIsOpen'=true] {
+  overflow-y: hidden;
+} */
+
 .menu_lineA {
   content: "";
   position: absolute;
