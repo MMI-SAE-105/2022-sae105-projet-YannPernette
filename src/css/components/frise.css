@@ -1,5 +1,8 @@
 .frise {
     margin: 15px;
+    background-color: var(--noir);
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .frise_date {
