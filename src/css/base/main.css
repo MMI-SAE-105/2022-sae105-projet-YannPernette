@@ -29,6 +29,7 @@ h3 {
     font-weight: var(--medium);
     text-decoration: underline var(--nuance-dore) 10px;
     padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 h4 {
