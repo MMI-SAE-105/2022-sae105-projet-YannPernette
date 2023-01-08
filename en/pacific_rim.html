@@ -18,7 +18,7 @@
 <body>
 
     <header class="header">
-        <a href="index.html" id="haut-de-page"><img class="header_logo" src="../public/img/header/logo.svg" alt="Logo Continuous Evolution"></a>
+        <a href="index.html"><img class="header_logo" src="../public/img/header/logo.svg" alt="Logo Continuous Evolution"></a>
 
         <button 
             class="menubtn"
@@ -27,23 +27,23 @@
         </button>
 
         <nav class="menu" @click="menuIsOpen =! menuIsOpen" :class="{'actif' : menuIsOpen == true}">           
-            <a href="index.html"><h3 class="menu_title">Accueil</h3></a>
+            <a href="index.html"><h3 class="menu_title">Homepage</h3></a>
             <div class="menu_lineA"></div>
             <h3 class="menu_titlecolor">Articles</h3>
             <ul>
-                <li><a class="menu_linkarticle" href="alamogordo.html"><img class="menu_icon" src="../public/icon/menu/lieu.svg" alt="icône lieu">Champ de tir d'Alamogordo</a></li>
+                <li><a class="menu_linkarticle" href="alamogordo.html"><img class="menu_icon" src="../public/icon/menu/lieu.svg" alt="icône lieu">White Sands Missile Range</a></li>
                 <li><a class="menu_linkarticle" href="evolution.html"><img class="menu_icon" src="../public/icon/menu/livre.svg" alt="icône lieu">Evolution</a></li>
                 <li><a class="menu_linkarticle" href="pacific_rim.html"><img class="menu_icon" src="../public/icon/menu/film.svg" alt="icône lieu">Pacific Rim</a></li>
                 <li><a class="menu_linkarticle" href="infinite_power.html"><img class="menu_icon" src="../public/icon/menu/musique.svg" alt="icône lieu">Infinite Power</a></li>
-                <li><a class="menu_linkarticle" href="changement_climatique.html"><img class="menu_icon" src="../public/icon/menu/crainte.svg" alt="icône lieu">Changement Climatique</a></li>
-                <li><a class="menu_linkarticle" href="projet_neom.html"><img class="menu_icon" src="../public/icon/menu/espoir.svg" alt="icône lieu">Projet Neom</a></li>
+                <li><a class="menu_linkarticle" href="changement_climatique.html"><img class="menu_icon" src="../public/icon/menu/crainte.svg" alt="icône lieu">Climat Change</a></li>
+                <li><a class="menu_linkarticle" href="projet_neom.html"><img class="menu_icon" src="../public/icon/menu/espoir.svg" alt="icône lieu">Project Neom</a></li>
             </ul>
             <div class="menu_lineB"></div>
             <h3 class="menu_titlecolor">Informations</h3>
             <ul>
                 <li><a class="menu_linkarticle" href="contact.html"><img class="menu_icon" src="../public/icon/menu/send.svg" alt="icône contact">Contact</a></li>
-                <li><a class="menu_linkarticle" href="a_propos.html"><img class="menu_icon" src="../public/icon/menu/user.svg" alt="icône à propos">À Propos</a></li>
-                <li><a class="menu_linkarticle" href="glossaire.html"><img class="menu_icon" src="../public/icon/menu/tag.svg" alt="icône glossaire">Glossaire</a></li>
+                <li><a class="menu_linkarticle" href="a_propos.html"><img class="menu_icon" src="../public/icon/menu/user.svg" alt="icône à propos">About</a></li>
+                <li><a class="menu_linkarticle" href="glossaire.html"><img class="menu_icon" src="../public/icon/menu/tag.svg" alt="icône glossaire">Glossary</a></li>
             </ul>
             <ul class="menu_social">
                 <li><a href="facebook.com"><img src="../public/icon/facebook.svg" alt="icône Facebook"></a></li>
@@ -56,15 +56,15 @@
             <button
                 class="languebtn"
                 @click="langueIsOpen =! langueIsOpen">
-                <img class="langue_img" src="../public/img/header/france.webp" alt="Français">
+                <img class="langue_img" src="../public/img/header/royaume_uni.webp" alt="Anglais">
                 <span class="triangle"></span>
             </button>
 
             <nav class="langue" x-show="langueIsOpen" x-collapse>
                 <h3 class="langue_title">Langues</h3>
                 <ul>
-                    <li><a class="langue_link langue_fr" href="accueil.html"><img class="langue_pays" src="../public/img/header/france.webp" alt="Français">Français</a></li>
-                    <li><a class="langue_link" href="accueil.html"><img class="langue_pays" src="../public/img/header/royaume_uni.webp" alt="English">English</a></li>
+                    <li><a class="langue_link langue_fr" href="../fr/index.html"><img class="langue_pays" src="../public/img/header/france.webp" alt="Français">Français</a></li>
+                    <li><a class="langue_link" href="index.html"><img class="langue_pays" src="../public/img/header/royaume_uni.webp" alt="English">English</a></li>
                 </ul>
                 <div class="langue_line"></div>
             </nav>
