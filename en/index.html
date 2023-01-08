@@ -1,14 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" x-data="{menuIsOpen: false}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Continuous Evolution</title>
+    <link rel="shortcut icon" href="../public/icon/adn_logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <!-- Importation x-collapse -->
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <!-- Importation Alpine.js -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body>
-    <h1>This is an incredible website in English</h1>
+
+    <header class="header">
+        <a href="index.html"><img class="header_logo" src="../public/img/header/logo.svg" alt="Logo Continuous Evolution"></a>
+
+        <button 
+            class="menubtn"
+            @click="menuIsOpen = !menuIsOpen">
+            <span class="menubtn_bar"></span>
+        </button>
+
+        <nav class="menu" @click="menuIsOpen =! menuIsOpen" :class="{'actif' : menuIsOpen == true}">           
+            <a href="index.html"><h3 class="menu_title">Homepage</h3></a>
+            <div class="menu_lineA"></div>
+            <h3 class="menu_titlecolor">Articles</h3>
+            <ul>
+                <li><a class="menu_linkarticle" href="alamogordo.html"><img class="menu_icon" src="../public/icon/menu/lieu.svg" alt="icône lieu">White Sands Missile Range</a></li>
+                <li><a class="menu_linkarticle" href="evolution.html"><img class="menu_icon" src="../public/icon/menu/livre.svg" alt="icône lieu">Evolution</a></li>
+                <li><a class="menu_linkarticle" href="pacific_rim.html"><img class="menu_icon" src="../public/icon/menu/film.svg" alt="icône lieu">Pacific Rim</a></li>
+                <li><a class="menu_linkarticle" href="infinite_power.html"><img class="menu_icon" src="../public/icon/menu/musique.svg" alt="icône lieu">Infinite Power</a></li>
+                <li><a class="menu_linkarticle" href="changement_climatique.html"><img class="menu_icon" src="../public/icon/menu/crainte.svg" alt="icône lieu">Climat Change</a></li>
+                <li><a class="menu_linkarticle" href="projet_neom.html"><img class="menu_icon" src="../public/icon/menu/espoir.svg" alt="icône lieu">Project Neom</a></li>
+            </ul>
+            <div class="menu_lineB"></div>
+            <h3 class="menu_titlecolor">Informations</h3>
+            <ul>
+                <li><a class="menu_linkarticle" href="contact.html"><img class="menu_icon" src="../public/icon/menu/send.svg" alt="icône contact">Contact</a></li>
+                <li><a class="menu_linkarticle" href="a_propos.html"><img class="menu_icon" src="../public/icon/menu/user.svg" alt="icône à propos">About</a></li>
+                <li><a class="menu_linkarticle" href="glossaire.html"><img class="menu_icon" src="../public/icon/menu/tag.svg" alt="icône glossaire">Glossary</a></li>
+            </ul>
+            <ul class="menu_social">
+                <li><a href="facebook.com"><img src="../public/icon/facebook.svg" alt="icône Facebook"></a></li>
+                <li><a href="instagram.com"><img src="../public/icon/instagram.svg" alt="icône Instagram"></a></li>
+                <li><a href="twitter.com"><img src="../public/icon/twitter.svg" alt="icône Twitter"></a></li>
+            </ul>
+        </nav>
+
+        <div x-data="{langueIsOpen: false}">
+            <button
+                class="languebtn"
+                @click="langueIsOpen =! langueIsOpen">
+                <img class="langue_img" src="../public/img/header/royaume_uni.webp" alt="Anglais">
+                <span class="triangle"></span>
+            </button>
+
+            <nav class="langue" x-show="langueIsOpen" x-collapse>
+                <h3 class="langue_title">Langues</h3>
+                <ul>
+                    <li><a class="langue_link langue_fr" href="../fr/index.html"><img class="langue_pays" src="../public/img/header/france.webp" alt="Français">Français</a></li>
+                    <li><a class="langue_link" href="index.html"><img class="langue_pays" src="../public/img/header/royaume_uni.webp" alt="English">English</a></li>
+                </ul>
+                <div class="langue_line"></div>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+
+        <h2>From the time of dinosaurs to our future, the website which retrace the evolution of the world</h2>
+        <img class="header_adn" src="../public/img/elements/adn_transi_a.svg" alt="transition ADN">
+
+        <h1>Continuous Evolution</h1>
+        <h3 class="intro"><span>6 themes</span><span>6 articles</span><span>6 experiences</span><span>Only one evolution</span></h3>
+        <p>Welcome to “Continuous Evolution”. This website deals with evolution and change. It will make you travel between the last years through 6 experiences introduced in chronological order. These experiences are articles which will raise your awareness on the continual change of the world we live in.</p>
+        
+        <article class="card">
+            <a href="alamogordo.html">
+                <h4 class="card_titre">White Sands Missile Range</h4>
+                <img class="card_img" src="../public/img/articles/alamogordo/alamogordo_main.webp" alt="champ de tir d'Alamogordo">
+                <p class="card_descr">The White Sands Missile Range is located in New Mexico, near the town of Socorro. This place isn’t very famous however...</p>
+                <p class="card_suite">Read more</p>
+            </a>
+        </article>
+
+        <article class="card">
+            <a href="evolution.html">
+                <h4 class="card_titre">Evolution</h4>
+                <img class="card_img" src="../public/img/articles/evolution/evolution_main.webp" alt="illustration officielle d'Evolution">
+                <p class="card_descr">Evolution is the title of a novel by Stephen Baxter published in 2002. This novel relates the history of the world in different parts...</p>
+                <p class="card_suite">Read more</p>
+            </a>
+        </article>
+
+        <article class="card">
+            <a href="pacific_rim.html">
+                <h4 class="card_titre">Pacific Rim</h4>
+                <img class="card_img" src="../public/img/articles/pacific_rim/pacific_rim_main.webp" alt="Jaeger de Pacific Rim">
+                <p class="card_descr">Pacific Rim is an American blockbuster released July the 17th 2013 in all the theaters of France. It’s an apocalyptic movie...</p>
+                <p class="card_suite">Read more</p>
+            </a>
+        </article>
+
+        <article class="card">
+            <a href="infinite_power.html">
+                <h4 class="card_titre">Infinite Power</h4>
+                <img class="card_img" src="../public/img/articles/infinite_power/infinite_power_main.webp" alt="illustration officelle de Infinite Power">
+                <p class="card_descr">Infinite Power is a music released in 2014 composed by TheFatRat. Christian Büttner from his real name...</p>
+                <p class="card_suite">Read more</p>
+            </a>
+        </article>
+
+        <article class="card">
+            <a href="changement_climatique.html">
+                <h4 class="card_titre">Climat Change</h4>
+                <img class="card_img" src="../public/img/articles/changement_climatique/changement_climatique_main.webp" alt="vue d'artiste de la Terre et de sa pollution">
+                <p class="card_descr">Climate change is one of the most important subjects right now. We didn’t care 50 years ago...</p>
+                <p class="card_suite">Read more</p>
+            </a>
+        </article>
+
+        <article class="card">
+            <a href="projet_neom.html">
+                <h4 class="card_titre">Project Neom</h4>
+                <img class="card_img" src="../public/img/articles/projet_neom/projet_neom_main.webp" alt="projection d'une vue de l’extérieur de The Line">
+                <p class="card_descr">Neom is the name of a project of a futuristic city on the Red sea. It will be composed of...</p>
+                <p class="card_suite">Read more</p>
+            </a>
+        </article>
+
+        <div class="footer_retour"><a href="#"><img src="../public/icon/arrow_circle.svg" alt="Icône de retour en haut de page"></a></div>
+    </main>
+
+    <footer class="footer">
+        <img class="footer_adn" src="../public/img/elements/adn_transi_b.svg" alt="transition ADN">
+            
+        <h4 class="footer_titre">Legal notices</h4>
+        <nav>
+            <a class="footer_lien" href="credits.html">Credits</a>
+        </nav>
+        <p class="footer_info">"project carried out for a pedagogical exercise at the department <a class="footer_lienmmi" href="http://mmimontbeliard.com">MMi of Montbéliard</a>"</p>
+
+        <h4 class="footer_titre">Follow us</h4>
+        <div class=""></div>
+        <div class="footer_suivre">
+            <nav>
+                <ul class="footer_res">
+                    <li><a href="https://www.facebook.com"><img src="../public/icon/facebook.svg" alt="logo facebook"></a></li>
+                    <li><a href="https://www.instagram.com"><img src="../public/icon/instagram.svg" alt="logo instagram"></a></li>
+                    <li><a href="https://www.twitter.com"><img src="../public/icon/twitter.svg" alt="logo twitter"></a></li>
+                </ul>
+            </nav>
+            <a href="http://mmimontbeliard.com"><img class="footer_mmi" src="../public/icon/mmi_logo.svg" alt="logo MMI Montbéliard"></a>
+        </div>
+
+        <address><a class="footer_adress" href="mailto:yann.pernette@edu.univ-fcomte.fr">By Yann PERNETTE MMI1 B2</a></address>
+    </footer>
+
 </body>
 
 </html>
